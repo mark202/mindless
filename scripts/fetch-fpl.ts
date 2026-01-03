@@ -1,7 +1,7 @@
 import path from 'node:path';
 import { promises as fs } from 'node:fs';
-import type { Bootstrap, EntryHistory, Manager, ManagersFile } from '../lib/types.ts';
-import { delay, ensureDir, fetchJson, loadConfig, writeJson } from './utils.ts';
+import type { Bootstrap, EntryHistory, Manager, ManagersFile } from '../lib/types';
+import { delay, ensureDir, fetchJson, loadConfig, writeJson } from './utils';
 
 async function fetchLeagueMembers(leagueId: number) {
   const members: any[] = [];

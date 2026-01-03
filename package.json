@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "ingest": "ts-node --transpileOnly scripts/fetch-fpl.ts && ts-node --transpileOnly scripts/derive.ts"
+    "ingest": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpileOnly scripts/fetch-fpl.ts && TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpileOnly scripts/derive.ts"
   },
   "dependencies": {
     "next": "^14.2.0",

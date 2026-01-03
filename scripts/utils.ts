@@ -1,6 +1,6 @@
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
-import type { MindlessConfig, TieMode } from '../lib/types.ts';
+import type { MindlessConfig, TieMode } from '../lib/types';
 
 const BASE_URL = 'https://fantasy.premierleague.com/api';
 

@@ -11,8 +11,8 @@ import type {
   ManagersFile,
   MindlessConfig,
   CupResults
-} from '../lib/types.ts';
-import { ensureDir, getPrizeForRank, loadConfig, rankRows, writeJson } from './utils.ts';
+} from '../lib/types';
+import { ensureDir, getPrizeForRank, loadConfig, rankRows, writeJson } from './utils';
 
 async function readJson<T>(relativePath: string): Promise<T> {
   const file = path.join(process.cwd(), relativePath);

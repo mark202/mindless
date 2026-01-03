@@ -54,8 +54,9 @@ async function main() {
 
   const finishedGws = bootstrap.events.filter((e) => e.finished).map((e) => e.id);
   const currentEvent = bootstrap.events.find((e) => e.is_current) ?? null;
+  const targetGws = Array.from(new Set([...finishedGws, currentEvent?.id].filter((v): v is number => Boolean(v))));
 
-  for (const gw of finishedGws) {
+  for (const gw of targetGws) {
     console.log(`Fetching live data for GW ${gw}`);
     const live = await fetchEventLive(gw);
     await writeJson(path.join('public', 'data', 'gameweeks', `${gw}-live.json`), live);
@@ -88,7 +89,7 @@ async function main() {
     console.log(`Fetching history for ${manager.playerName} (${manager.entryId})`);
     const history = await fetchEntryHistory(manager.entryId);
     await writeJson(path.join(rawDir, `${manager.entryId}.json`), history);
-    for (const gw of finishedGws) {
+    for (const gw of targetGws) {
       const picks = await fetchEntryPicks(manager.entryId, gw);
       const mappedPicks: GameweekPick[] =
         picks?.picks?.map((pick: any) => {
@@ -117,7 +118,7 @@ async function main() {
   }
 
   // Write picks grouped per finished GW
-  for (const gw of finishedGws) {
+  for (const gw of targetGws) {
     const squads = picksByGw[gw] || [];
     const teamsFile: GameweekTeamsFile = { gw, squads };
     await writeJson(path.join('public', 'data', 'gameweeks', `${gw}-teams.json`), teamsFile);

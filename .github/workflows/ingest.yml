@@ -28,6 +28,12 @@ jobs:
       - name: Generate weekly summary
         run: npm run summary
 
+      - name: Sync branch
+        run: |
+          git fetch origin ${{ github.ref_name }}
+          git checkout ${{ github.ref_name }}
+          git pull --rebase origin ${{ github.ref_name }} || true
+
       - name: Commit data artifacts
         run: |
           git config user.name "mindless-bot"

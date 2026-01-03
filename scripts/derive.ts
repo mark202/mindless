@@ -33,8 +33,6 @@ async function main() {
   const managers = await readJson<ManagersFile>(path.join('public', 'data', 'managers.json'));
   const bootstrap = await readJson<Bootstrap>(path.join('public', 'data', 'bootstrap.json'));
 
-  const finishedGws = bootstrap.events.filter((event) => event.finished).map((event) => event.id);
-
   const histories = new Map<number, EntryHistory>();
   let maxEventAcrossHistories = 0;
   for (const manager of managers.managers) {
@@ -46,13 +44,21 @@ async function main() {
     }
   }
 
+  const finishedSet = new Set(bootstrap.events.filter((event) => event.finished).map((event) => event.id));
+  const allHistoryGws = Array.from(
+    new Set(
+      Array.from(histories.values()).flatMap((h) => h.current.map((c) => c.event))
+    )
+  ).sort((a, b) => a - b);
+
   const weeklies: WeeklyResult[] = [];
   const gameweekPoints = new Map<number, Map<number, { points: number; totalPoints: number }>>();
   const prizeLedger: PrizeLedgerItem[] = [];
 
   await ensureDir(path.join(process.cwd(), 'public', 'data', 'gameweeks'));
 
-  for (const gw of finishedGws) {
+  for (const gw of allHistoryGws) {
+    const isFinished = finishedSet.has(gw);
     const rows = managers.managers.map((manager) => {
       const history = histories.get(manager.entryId);
       const event = history?.current.find((item) => item.event === gw);
@@ -69,7 +75,7 @@ async function main() {
     const gameweekFile: GameweekFile = {
       gw,
       deadlineTime,
-      isFinished: true,
+      isFinished,
       rows
     };
 
@@ -88,17 +94,19 @@ async function main() {
       prize: row.prize
     }));
 
-    ranked
-      .filter((row) => row.prize > 0)
-      .forEach((row) =>
-        prizeLedger.push({
-          type: 'weekly',
-          gw,
-          entryId: row.entryId,
-          amount: row.prize,
-          reason: `GW${gw} rank ${row.rank}`
-        })
-      );
+    if (isFinished) {
+      ranked
+        .filter((row) => row.prize > 0)
+        .forEach((row) =>
+          prizeLedger.push({
+            type: 'weekly',
+            gw,
+            entryId: row.entryId,
+            amount: row.prize,
+            reason: `GW${gw} rank ${row.rank}`
+          })
+        );
+    }
 
     weeklies.push({ gw, ranked, deadlineTime });
   }
@@ -107,7 +115,7 @@ async function main() {
 
   const months: MonthlyResult[] = [];
   for (const month of config.monthDefinitions) {
-    const finishedMonthGws = month.gws.filter((gw) => finishedGws.includes(gw));
+    const finishedMonthGws = month.gws.filter((gw) => finishedSet.has(gw));
     const rows = managers.managers.map((manager) => {
       const total = finishedMonthGws.reduce((sum, gw) => {
         const points = gameweekPoints.get(gw)?.get(manager.entryId)?.points ?? 0;
@@ -147,12 +155,17 @@ async function main() {
 
   await writeJson(path.join('public', 'data', 'derived', 'months.json'), months);
 
-  const lastFinishedGw = finishedGws.length ? Math.max(...finishedGws) : maxEventAcrossHistories;
+  const finishedGwsArray = Array.from(finishedSet);
+  const lastAvailableGw = allHistoryGws.length ? Math.max(...allHistoryGws) : 0;
+  const lastFinishedGw =
+    finishedGwsArray.length > 0 ? Math.max(...finishedGwsArray) : lastAvailableGw || maxEventAcrossHistories;
 
   const seasonRows = managers.managers.map((manager) => {
-    const totalPoints = finishedGws.reduce((sum, gw) => {
-      return sum + (gameweekPoints.get(gw)?.get(manager.entryId)?.points ?? 0);
-    }, 0);
+    const totalPointsGws = allHistoryGws.length ? allHistoryGws : finishedGwsArray;
+    const totalPoints = totalPointsGws.reduce(
+      (sum, gw) => sum + (gameweekPoints.get(gw)?.get(manager.entryId)?.points ?? 0),
+      0
+    );
 
     return {
       entryId: manager.entryId,
@@ -240,6 +253,7 @@ async function main() {
 
   await writeJson(path.join('public', 'data', 'derived', 'latest.json'), {
     lastFinishedGw,
+    lastAvailableGw,
     currentGw: (bootstrap.events.find((event) => event.is_current)?.id ?? maxEventAcrossHistories) || null,
     generatedAt: new Date().toISOString()
   });

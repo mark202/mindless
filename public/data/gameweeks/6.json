@@ -1,0 +1,77 @@
+{
+  "gw": 6,
+  "deadlineTime": "2025-09-27T10:00:00Z",
+  "isFinished": true,
+  "rows": [
+    {
+      "entryId": 6879756,
+      "playerName": "Chris Hajjar",
+      "teamName": "Leeds United States",
+      "points": 49,
+      "totalPoints": 254
+    },
+    {
+      "entryId": 5905295,
+      "playerName": "Mark Hogben",
+      "teamName": "The 202",
+      "points": 32,
+      "totalPoints": 218
+    },
+    {
+      "entryId": 5114501,
+      "playerName": "Jamie Marshall",
+      "teamName": "Fortune and Glory",
+      "points": 38,
+      "totalPoints": 211
+    },
+    {
+      "entryId": 6108677,
+      "playerName": "Jason Base",
+      "teamName": "Isakly What We Need",
+      "points": 55,
+      "totalPoints": 161
+    },
+    {
+      "entryId": 5623640,
+      "playerName": "Andrew Cowling",
+      "teamName": "Cowlers FC",
+      "points": 44,
+      "totalPoints": 212
+    },
+    {
+      "entryId": 5742237,
+      "playerName": "Lee Hopson",
+      "teamName": "Check your Emails",
+      "points": 54,
+      "totalPoints": 184
+    },
+    {
+      "entryId": 4223228,
+      "playerName": "Paul Cowley",
+      "teamName": "Lukakugate",
+      "points": 56,
+      "totalPoints": 148
+    },
+    {
+      "entryId": 7316166,
+      "playerName": "Ricky Hopson",
+      "teamName": "New Jersey United",
+      "points": 35,
+      "totalPoints": 117
+    },
+    {
+      "entryId": 6578949,
+      "playerName": "Marc Hopson",
+      "teamName": "Peter Siddle’s Lunch",
+      "points": 53,
+      "totalPoints": 105
+    },
+    {
+      "entryId": 2761555,
+      "playerName": "Dickster Bishop",
+      "teamName": "Miso  Consadole",
+      "points": 54,
+      "totalPoints": 203
+    }
+  ]
+}

@@ -1,0 +1,1365 @@
+{
+  "items": [
+    {
+      "type": "weekly",
+      "gw": 1,
+      "entryId": 4223228,
+      "amount": 8,
+      "reason": "GW1 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 1,
+      "entryId": 2761555,
+      "amount": 6,
+      "reason": "GW1 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 1,
+      "entryId": 6108677,
+      "amount": 5,
+      "reason": "GW1 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 1,
+      "entryId": 6879756,
+      "amount": 4,
+      "reason": "GW1 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 1,
+      "entryId": 5623640,
+      "amount": 2.5,
+      "reason": "GW1 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 1,
+      "entryId": 6578949,
+      "amount": 1.5,
+      "reason": "GW1 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 1,
+      "entryId": 5742237,
+      "amount": 1,
+      "reason": "GW1 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 2,
+      "entryId": 2761555,
+      "amount": 8,
+      "reason": "GW2 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 2,
+      "entryId": 6879756,
+      "amount": 6,
+      "reason": "GW2 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 2,
+      "entryId": 5623640,
+      "amount": 5,
+      "reason": "GW2 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 2,
+      "entryId": 4223228,
+      "amount": 4,
+      "reason": "GW2 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 2,
+      "entryId": 6108677,
+      "amount": 2.5,
+      "reason": "GW2 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 2,
+      "entryId": 7316166,
+      "amount": 1.5,
+      "reason": "GW2 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 2,
+      "entryId": 5114501,
+      "amount": 1,
+      "reason": "GW2 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 3,
+      "entryId": 5742237,
+      "amount": 8,
+      "reason": "GW3 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 3,
+      "entryId": 6108677,
+      "amount": 6,
+      "reason": "GW3 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 3,
+      "entryId": 6578949,
+      "amount": 5,
+      "reason": "GW3 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 3,
+      "entryId": 5114501,
+      "amount": 4,
+      "reason": "GW3 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 3,
+      "entryId": 5623640,
+      "amount": 2.5,
+      "reason": "GW3 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 3,
+      "entryId": 4223228,
+      "amount": 1.5,
+      "reason": "GW3 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 3,
+      "entryId": 5905295,
+      "amount": 1,
+      "reason": "GW3 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 4,
+      "entryId": 2761555,
+      "amount": 8,
+      "reason": "GW4 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 4,
+      "entryId": 6578949,
+      "amount": 6,
+      "reason": "GW4 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 4,
+      "entryId": 5742237,
+      "amount": 5,
+      "reason": "GW4 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 4,
+      "entryId": 6108677,
+      "amount": 4,
+      "reason": "GW4 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 4,
+      "entryId": 5114501,
+      "amount": 2.5,
+      "reason": "GW4 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 4,
+      "entryId": 5905295,
+      "amount": 1.5,
+      "reason": "GW4 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 4,
+      "entryId": 6879756,
+      "amount": 1,
+      "reason": "GW4 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 5,
+      "entryId": 5114501,
+      "amount": 8,
+      "reason": "GW5 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 5,
+      "entryId": 7316166,
+      "amount": 6,
+      "reason": "GW5 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 5,
+      "entryId": 2761555,
+      "amount": 5,
+      "reason": "GW5 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 5,
+      "entryId": 5623640,
+      "amount": 4,
+      "reason": "GW5 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 5,
+      "entryId": 6578949,
+      "amount": 2.5,
+      "reason": "GW5 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 5,
+      "entryId": 5742237,
+      "amount": 1.5,
+      "reason": "GW5 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 5,
+      "entryId": 6879756,
+      "amount": 1,
+      "reason": "GW5 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 6,
+      "entryId": 4223228,
+      "amount": 8,
+      "reason": "GW6 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 6,
+      "entryId": 6108677,
+      "amount": 6,
+      "reason": "GW6 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 6,
+      "entryId": 2761555,
+      "amount": 5,
+      "reason": "GW6 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 6,
+      "entryId": 5742237,
+      "amount": 4,
+      "reason": "GW6 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 6,
+      "entryId": 6578949,
+      "amount": 2.5,
+      "reason": "GW6 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 6,
+      "entryId": 6879756,
+      "amount": 1.5,
+      "reason": "GW6 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 6,
+      "entryId": 5623640,
+      "amount": 1,
+      "reason": "GW6 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 7,
+      "entryId": 7316166,
+      "amount": 8,
+      "reason": "GW7 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 7,
+      "entryId": 6108677,
+      "amount": 6,
+      "reason": "GW7 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 7,
+      "entryId": 4223228,
+      "amount": 5,
+      "reason": "GW7 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 7,
+      "entryId": 5742237,
+      "amount": 4,
+      "reason": "GW7 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 7,
+      "entryId": 6578949,
+      "amount": 2.5,
+      "reason": "GW7 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 7,
+      "entryId": 2761555,
+      "amount": 1.5,
+      "reason": "GW7 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 7,
+      "entryId": 5114501,
+      "amount": 1,
+      "reason": "GW7 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 8,
+      "entryId": 6578949,
+      "amount": 8,
+      "reason": "GW8 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 8,
+      "entryId": 7316166,
+      "amount": 6,
+      "reason": "GW8 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 8,
+      "entryId": 6108677,
+      "amount": 5,
+      "reason": "GW8 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 8,
+      "entryId": 2761555,
+      "amount": 4,
+      "reason": "GW8 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 8,
+      "entryId": 5114501,
+      "amount": 2.5,
+      "reason": "GW8 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 8,
+      "entryId": 4223228,
+      "amount": 1.5,
+      "reason": "GW8 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 8,
+      "entryId": 6879756,
+      "amount": 1,
+      "reason": "GW8 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 9,
+      "entryId": 2761555,
+      "amount": 8,
+      "reason": "GW9 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 9,
+      "entryId": 6108677,
+      "amount": 6,
+      "reason": "GW9 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 9,
+      "entryId": 5114501,
+      "amount": 5,
+      "reason": "GW9 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 9,
+      "entryId": 6879756,
+      "amount": 4,
+      "reason": "GW9 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 9,
+      "entryId": 5623640,
+      "amount": 2.5,
+      "reason": "GW9 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 9,
+      "entryId": 5742237,
+      "amount": 1.5,
+      "reason": "GW9 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 9,
+      "entryId": 5905295,
+      "amount": 1,
+      "reason": "GW9 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 10,
+      "entryId": 4223228,
+      "amount": 8,
+      "reason": "GW10 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 10,
+      "entryId": 7316166,
+      "amount": 6,
+      "reason": "GW10 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 10,
+      "entryId": 5905295,
+      "amount": 5,
+      "reason": "GW10 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 10,
+      "entryId": 5742237,
+      "amount": 4,
+      "reason": "GW10 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 10,
+      "entryId": 5114501,
+      "amount": 2.5,
+      "reason": "GW10 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 10,
+      "entryId": 6108677,
+      "amount": 1.5,
+      "reason": "GW10 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 10,
+      "entryId": 6578949,
+      "amount": 1,
+      "reason": "GW10 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 11,
+      "entryId": 6879756,
+      "amount": 8,
+      "reason": "GW11 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 11,
+      "entryId": 5623640,
+      "amount": 6,
+      "reason": "GW11 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 11,
+      "entryId": 4223228,
+      "amount": 5,
+      "reason": "GW11 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 11,
+      "entryId": 2761555,
+      "amount": 4,
+      "reason": "GW11 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 11,
+      "entryId": 5742237,
+      "amount": 2.5,
+      "reason": "GW11 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 11,
+      "entryId": 5114501,
+      "amount": 1.5,
+      "reason": "GW11 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 11,
+      "entryId": 6578949,
+      "amount": 1,
+      "reason": "GW11 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 12,
+      "entryId": 5623640,
+      "amount": 8,
+      "reason": "GW12 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 12,
+      "entryId": 6578949,
+      "amount": 6,
+      "reason": "GW12 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 12,
+      "entryId": 6108677,
+      "amount": 5,
+      "reason": "GW12 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 12,
+      "entryId": 4223228,
+      "amount": 4,
+      "reason": "GW12 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 12,
+      "entryId": 7316166,
+      "amount": 2.5,
+      "reason": "GW12 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 12,
+      "entryId": 6879756,
+      "amount": 1.5,
+      "reason": "GW12 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 12,
+      "entryId": 5742237,
+      "amount": 1,
+      "reason": "GW12 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 13,
+      "entryId": 2761555,
+      "amount": 8,
+      "reason": "GW13 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 13,
+      "entryId": 7316166,
+      "amount": 6,
+      "reason": "GW13 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 13,
+      "entryId": 6108677,
+      "amount": 5,
+      "reason": "GW13 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 13,
+      "entryId": 4223228,
+      "amount": 4,
+      "reason": "GW13 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 13,
+      "entryId": 5114501,
+      "amount": 2.5,
+      "reason": "GW13 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 13,
+      "entryId": 6578949,
+      "amount": 1.5,
+      "reason": "GW13 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 13,
+      "entryId": 5623640,
+      "amount": 1,
+      "reason": "GW13 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 14,
+      "entryId": 6108677,
+      "amount": 8,
+      "reason": "GW14 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 14,
+      "entryId": 7316166,
+      "amount": 6,
+      "reason": "GW14 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 14,
+      "entryId": 5623640,
+      "amount": 5,
+      "reason": "GW14 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 14,
+      "entryId": 6879756,
+      "amount": 4,
+      "reason": "GW14 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 14,
+      "entryId": 6578949,
+      "amount": 2.5,
+      "reason": "GW14 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 14,
+      "entryId": 4223228,
+      "amount": 1.5,
+      "reason": "GW14 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 14,
+      "entryId": 5114501,
+      "amount": 1,
+      "reason": "GW14 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 15,
+      "entryId": 2761555,
+      "amount": 8,
+      "reason": "GW15 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 15,
+      "entryId": 5114501,
+      "amount": 6,
+      "reason": "GW15 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 15,
+      "entryId": 6108677,
+      "amount": 5,
+      "reason": "GW15 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 15,
+      "entryId": 6578949,
+      "amount": 4,
+      "reason": "GW15 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 15,
+      "entryId": 7316166,
+      "amount": 2.5,
+      "reason": "GW15 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 15,
+      "entryId": 5623640,
+      "amount": 1.5,
+      "reason": "GW15 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 15,
+      "entryId": 5742237,
+      "amount": 1,
+      "reason": "GW15 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 16,
+      "entryId": 7316166,
+      "amount": 8,
+      "reason": "GW16 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 16,
+      "entryId": 6108677,
+      "amount": 6,
+      "reason": "GW16 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 16,
+      "entryId": 2761555,
+      "amount": 5,
+      "reason": "GW16 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 16,
+      "entryId": 5905295,
+      "amount": 4,
+      "reason": "GW16 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 16,
+      "entryId": 5623640,
+      "amount": 2.5,
+      "reason": "GW16 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 16,
+      "entryId": 5114501,
+      "amount": 1.5,
+      "reason": "GW16 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 16,
+      "entryId": 6879756,
+      "amount": 1,
+      "reason": "GW16 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 17,
+      "entryId": 5623640,
+      "amount": 8,
+      "reason": "GW17 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 17,
+      "entryId": 2761555,
+      "amount": 6,
+      "reason": "GW17 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 17,
+      "entryId": 4223228,
+      "amount": 5,
+      "reason": "GW17 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 17,
+      "entryId": 6108677,
+      "amount": 4,
+      "reason": "GW17 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 17,
+      "entryId": 5114501,
+      "amount": 2.5,
+      "reason": "GW17 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 17,
+      "entryId": 6578949,
+      "amount": 1.5,
+      "reason": "GW17 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 17,
+      "entryId": 6879756,
+      "amount": 1,
+      "reason": "GW17 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 18,
+      "entryId": 4223228,
+      "amount": 8,
+      "reason": "GW18 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 18,
+      "entryId": 5623640,
+      "amount": 6,
+      "reason": "GW18 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 18,
+      "entryId": 6879756,
+      "amount": 5,
+      "reason": "GW18 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 18,
+      "entryId": 6108677,
+      "amount": 4,
+      "reason": "GW18 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 18,
+      "entryId": 7316166,
+      "amount": 2.5,
+      "reason": "GW18 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 18,
+      "entryId": 6578949,
+      "amount": 1.5,
+      "reason": "GW18 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 18,
+      "entryId": 5905295,
+      "amount": 1,
+      "reason": "GW18 rank 7"
+    },
+    {
+      "type": "weekly",
+      "gw": 19,
+      "entryId": 5905295,
+      "amount": 8,
+      "reason": "GW19 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 19,
+      "entryId": 5114501,
+      "amount": 6,
+      "reason": "GW19 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 19,
+      "entryId": 5742237,
+      "amount": 5,
+      "reason": "GW19 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 19,
+      "entryId": 6879756,
+      "amount": 4,
+      "reason": "GW19 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 19,
+      "entryId": 6108677,
+      "amount": 2.5,
+      "reason": "GW19 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 19,
+      "entryId": 7316166,
+      "amount": 1.5,
+      "reason": "GW19 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 19,
+      "entryId": 5623640,
+      "amount": 1,
+      "reason": "GW19 rank 7"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Aug",
+      "entryId": 2761555,
+      "amount": 15,
+      "reason": "Aug rank 1"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Aug",
+      "entryId": 4223228,
+      "amount": 12,
+      "reason": "Aug rank 2"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Aug",
+      "entryId": 6108677,
+      "amount": 7.5,
+      "reason": "Aug rank 3"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Aug",
+      "entryId": 5623640,
+      "amount": 6,
+      "reason": "Aug rank 4"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Aug",
+      "entryId": 6879756,
+      "amount": 4.5,
+      "reason": "Aug rank 5"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Sep",
+      "entryId": 2761555,
+      "amount": 15,
+      "reason": "Sep rank 1"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Sep",
+      "entryId": 6578949,
+      "amount": 12,
+      "reason": "Sep rank 2"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Sep",
+      "entryId": 5742237,
+      "amount": 7.5,
+      "reason": "Sep rank 3"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Sep",
+      "entryId": 5114501,
+      "amount": 6,
+      "reason": "Sep rank 4"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Sep",
+      "entryId": 6879756,
+      "amount": 4.5,
+      "reason": "Sep rank 5"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Oct",
+      "entryId": 6108677,
+      "amount": 15,
+      "reason": "Oct rank 1"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Oct",
+      "entryId": 7316166,
+      "amount": 12,
+      "reason": "Oct rank 2"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Oct",
+      "entryId": 2761555,
+      "amount": 7.5,
+      "reason": "Oct rank 3"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Oct",
+      "entryId": 6578949,
+      "amount": 6,
+      "reason": "Oct rank 4"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Oct",
+      "entryId": 4223228,
+      "amount": 4.5,
+      "reason": "Oct rank 5"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Nov",
+      "entryId": 4223228,
+      "amount": 20,
+      "reason": "Nov rank 1"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Nov",
+      "entryId": 7316166,
+      "amount": 16,
+      "reason": "Nov rank 2"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Nov",
+      "entryId": 5623640,
+      "amount": 10,
+      "reason": "Nov rank 3"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Nov",
+      "entryId": 6108677,
+      "amount": 8,
+      "reason": "Nov rank 4"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Nov",
+      "entryId": 6578949,
+      "amount": 6,
+      "reason": "Nov rank 5"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Dec",
+      "entryId": 6108677,
+      "amount": 30,
+      "reason": "Dec rank 1"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Dec",
+      "entryId": 5623640,
+      "amount": 24,
+      "reason": "Dec rank 2"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Dec",
+      "entryId": 5114501,
+      "amount": 15,
+      "reason": "Dec rank 3"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Dec",
+      "entryId": 7316166,
+      "amount": 12,
+      "reason": "Dec rank 4"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Dec",
+      "entryId": 2761555,
+      "amount": 9,
+      "reason": "Dec rank 5"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Jan",
+      "entryId": 2761555,
+      "amount": 25,
+      "reason": "Jan rank 1"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Jan",
+      "entryId": 4223228,
+      "amount": 20,
+      "reason": "Jan rank 2"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Jan",
+      "entryId": 5114501,
+      "amount": 12.5,
+      "reason": "Jan rank 3"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Jan",
+      "entryId": 5623640,
+      "amount": 10,
+      "reason": "Jan rank 4"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Jan",
+      "entryId": 5742237,
+      "amount": 7.5,
+      "reason": "Jan rank 5"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Feb",
+      "entryId": 2761555,
+      "amount": 20,
+      "reason": "Feb rank 1"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Feb",
+      "entryId": 4223228,
+      "amount": 16,
+      "reason": "Feb rank 2"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Feb",
+      "entryId": 5114501,
+      "amount": 10,
+      "reason": "Feb rank 3"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Feb",
+      "entryId": 5623640,
+      "amount": 8,
+      "reason": "Feb rank 4"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Feb",
+      "entryId": 5742237,
+      "amount": 6,
+      "reason": "Feb rank 5"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Mar",
+      "entryId": 2761555,
+      "amount": 15,
+      "reason": "Mar rank 1"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Mar",
+      "entryId": 4223228,
+      "amount": 12,
+      "reason": "Mar rank 2"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Mar",
+      "entryId": 5114501,
+      "amount": 7.5,
+      "reason": "Mar rank 3"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Mar",
+      "entryId": 5623640,
+      "amount": 6,
+      "reason": "Mar rank 4"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Mar",
+      "entryId": 5742237,
+      "amount": 4.5,
+      "reason": "Mar rank 5"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Apr",
+      "entryId": 2761555,
+      "amount": 15,
+      "reason": "Apr rank 1"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Apr",
+      "entryId": 4223228,
+      "amount": 12,
+      "reason": "Apr rank 2"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Apr",
+      "entryId": 5114501,
+      "amount": 7.5,
+      "reason": "Apr rank 3"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Apr",
+      "entryId": 5623640,
+      "amount": 6,
+      "reason": "Apr rank 4"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "Apr",
+      "entryId": 5742237,
+      "amount": 4.5,
+      "reason": "Apr rank 5"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "May",
+      "entryId": 2761555,
+      "amount": 20,
+      "reason": "May rank 1"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "May",
+      "entryId": 4223228,
+      "amount": 16,
+      "reason": "May rank 2"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "May",
+      "entryId": 5114501,
+      "amount": 10,
+      "reason": "May rank 3"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "May",
+      "entryId": 5623640,
+      "amount": 8,
+      "reason": "May rank 4"
+    },
+    {
+      "type": "monthly",
+      "monthKey": "May",
+      "entryId": 5742237,
+      "amount": 6,
+      "reason": "May rank 5"
+    },
+    {
+      "type": "season",
+      "entryId": 6108677,
+      "amount": 60,
+      "reason": "Season rank 1"
+    },
+    {
+      "type": "season",
+      "entryId": 2761555,
+      "amount": 54,
+      "reason": "Season rank 2"
+    },
+    {
+      "type": "season",
+      "entryId": 7316166,
+      "amount": 48,
+      "reason": "Season rank 3"
+    },
+    {
+      "type": "season",
+      "entryId": 4223228,
+      "amount": 42,
+      "reason": "Season rank 4"
+    },
+    {
+      "type": "season",
+      "entryId": 5623640,
+      "amount": 36,
+      "reason": "Season rank 5"
+    },
+    {
+      "type": "season",
+      "entryId": 6578949,
+      "amount": 30,
+      "reason": "Season rank 6"
+    },
+    {
+      "type": "season",
+      "entryId": 5114501,
+      "amount": 24,
+      "reason": "Season rank 7"
+    },
+    {
+      "type": "season",
+      "entryId": 6879756,
+      "amount": 18,
+      "reason": "Season rank 8"
+    },
+    {
+      "type": "season",
+      "entryId": 5742237,
+      "amount": 12,
+      "reason": "Season rank 9"
+    },
+    {
+      "type": "season",
+      "entryId": 5905295,
+      "amount": 6,
+      "reason": "Season rank 10"
+    },
+    {
+      "type": "cup",
+      "cupKey": "Cup2",
+      "entryId": 0,
+      "amount": 53,
+      "reason": "Cup Competition No. 2 winner"
+    }
+  ],
+  "totalsByEntryId": {
+    "0": 53,
+    "2761555": 272,
+    "4223228": 218,
+    "5114501": 140,
+    "5623640": 170.5,
+    "5742237": 86.5,
+    "5905295": 27.5,
+    "6108677": 202,
+    "6578949": 101,
+    "6879756": 70,
+    "7316166": 144.5
+  }
+}

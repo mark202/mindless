@@ -1,0 +1,126 @@
+{
+  "season": "2025-2026",
+  "lastUpdatedGw": 19,
+  "rows": [
+    {
+      "entryId": 6108677,
+      "playerName": "Jason Base",
+      "teamName": "Isakly What We Need",
+      "totalPoints": 1168,
+      "rank": 1,
+      "seasonPrize": 60,
+      "weeklyWinnings": 81.5,
+      "monthlyWinnings": 60.5,
+      "cupWinnings": 0,
+      "totalWinnings": 202
+    },
+    {
+      "entryId": 2761555,
+      "playerName": "Dickster Bishop",
+      "teamName": "Miso  Consadole",
+      "totalPoints": 1119,
+      "rank": 2,
+      "seasonPrize": 54,
+      "weeklyWinnings": 76.5,
+      "monthlyWinnings": 141.5,
+      "cupWinnings": 0,
+      "totalWinnings": 272
+    },
+    {
+      "entryId": 7316166,
+      "playerName": "Ricky Hopson",
+      "teamName": "New Jersey United",
+      "totalPoints": 1097,
+      "rank": 3,
+      "seasonPrize": 48,
+      "weeklyWinnings": 56.5,
+      "monthlyWinnings": 40,
+      "cupWinnings": 0,
+      "totalWinnings": 144.5
+    },
+    {
+      "entryId": 4223228,
+      "playerName": "Paul Cowley",
+      "teamName": "Lukakugate",
+      "totalPoints": 1091,
+      "rank": 4,
+      "seasonPrize": 42,
+      "weeklyWinnings": 63.5,
+      "monthlyWinnings": 112.5,
+      "cupWinnings": 0,
+      "totalWinnings": 218
+    },
+    {
+      "entryId": 5623640,
+      "playerName": "Andrew Cowling",
+      "teamName": "Cowlers FC",
+      "totalPoints": 1083,
+      "rank": 5,
+      "seasonPrize": 36,
+      "weeklyWinnings": 56.5,
+      "monthlyWinnings": 78,
+      "cupWinnings": 0,
+      "totalWinnings": 170.5
+    },
+    {
+      "entryId": 6578949,
+      "playerName": "Marc Hopson",
+      "teamName": "Peter Siddle’s Lunch",
+      "totalPoints": 1074,
+      "rank": 6,
+      "seasonPrize": 30,
+      "weeklyWinnings": 47,
+      "monthlyWinnings": 24,
+      "cupWinnings": 0,
+      "totalWinnings": 101
+    },
+    {
+      "entryId": 5114501,
+      "playerName": "Jamie Marshall",
+      "teamName": "Fortune and Glory",
+      "totalPoints": 1064,
+      "rank": 7,
+      "seasonPrize": 24,
+      "weeklyWinnings": 47.5,
+      "monthlyWinnings": 68.5,
+      "cupWinnings": 0,
+      "totalWinnings": 140
+    },
+    {
+      "entryId": 6879756,
+      "playerName": "Chris Hajjar",
+      "teamName": "Leeds United States",
+      "totalPoints": 1018,
+      "rank": 8,
+      "seasonPrize": 18,
+      "weeklyWinnings": 43,
+      "monthlyWinnings": 9,
+      "cupWinnings": 0,
+      "totalWinnings": 70
+    },
+    {
+      "entryId": 5742237,
+      "playerName": "Lee Hopson",
+      "teamName": "Check your Emails",
+      "totalPoints": 973,
+      "rank": 9,
+      "seasonPrize": 12,
+      "weeklyWinnings": 38.5,
+      "monthlyWinnings": 36,
+      "cupWinnings": 0,
+      "totalWinnings": 86.5
+    },
+    {
+      "entryId": 5905295,
+      "playerName": "Mark Hogben",
+      "teamName": "The 202",
+      "totalPoints": 895,
+      "rank": 10,
+      "seasonPrize": 6,
+      "weeklyWinnings": 21.5,
+      "monthlyWinnings": 0,
+      "cupWinnings": 0,
+      "totalWinnings": 27.5
+    }
+  ]
+}

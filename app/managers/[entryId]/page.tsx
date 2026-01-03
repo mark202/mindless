@@ -36,6 +36,16 @@ export default async function ManagerDetail({ params }: { params: { entryId: str
         <p className="text-xs uppercase tracking-[0.3em] text-gray-500">Manager</p>
         <h1 className="text-2xl font-semibold text-white">{manager?.playerName}</h1>
         <p className="text-sm text-gray-400">{manager?.teamName}</p>
+        <div className="mt-2">
+          <a
+            href={`https://fantasy.premierleague.com/entry/${entryId}/event/${weeklies[weeklies.length - 1]?.gw ?? ''}`}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full border border-brand-500 px-3 py-1 text-xs font-semibold text-brand-100 hover:bg-brand-500/10"
+          >
+            Open in FPL
+          </a>
+        </div>
       </div>
 
       <div className="grid gap-4 md:grid-cols-4">

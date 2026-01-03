@@ -3,12 +3,15 @@ import path from 'node:path';
 import {
   Bootstrap,
   GameweekFile,
+  GameweekTeamsFile,
+  GameweekLiveFile,
   ManagersFile,
   MonthlyResult,
   PrizesFile,
   SeasonFile,
   WeeklyResult,
-  PrizeLedgerItem
+  PrizeLedgerItem,
+  WeeklyNarrative
 } from './types';
 
 const dataRoot = path.join(process.cwd(), 'public', 'data');
@@ -71,6 +74,18 @@ export async function listGameweeks(): Promise<number[]> {
 
 export async function loadGameweek(gw: number): Promise<GameweekFile | null> {
   return readJson<GameweekFile | null>(`gameweeks/${gw}.json`, null);
+}
+
+export async function loadGameweekTeams(gw: number): Promise<GameweekTeamsFile | null> {
+  return readJson<GameweekTeamsFile | null>(`gameweeks/${gw}-teams.json`, null);
+}
+
+export async function loadGameweekLive(gw: number): Promise<GameweekLiveFile | null> {
+  return readJson<GameweekLiveFile | null>(`gameweeks/${gw}-live.json`, null);
+}
+
+export async function loadWeeklyNarratives(): Promise<WeeklyNarrative[]> {
+  return readJson<WeeklyNarrative[]>('derived/week-narratives.json', []);
 }
 
 export async function loadLedgerForEntry(entryId: number): Promise<PrizeLedgerItem[]> {

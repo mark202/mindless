@@ -1,0 +1,1575 @@
+{
+  "gw": 3,
+  "squads": [
+    {
+      "entryId": 6879756,
+      "playerName": "Chris Hajjar",
+      "teamName": "Leeds United States",
+      "picks": [
+        {
+          "element": 287,
+          "position": 1,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Pickford",
+          "teamCode": 11,
+          "elementType": 1
+        },
+        {
+          "element": 575,
+          "position": 2,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Van de Ven",
+          "teamCode": 6,
+          "elementType": 2
+        },
+        {
+          "element": 444,
+          "position": 3,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Yoro",
+          "teamCode": 1,
+          "elementType": 2
+        },
+        {
+          "element": 568,
+          "position": 4,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Pedro Porro",
+          "teamCode": 6,
+          "elementType": 2
+        },
+        {
+          "element": 427,
+          "position": 5,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Reijnders",
+          "teamCode": 43,
+          "elementType": 3
+        },
+        {
+          "element": 419,
+          "position": 6,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Grealish",
+          "teamCode": 11,
+          "elementType": 3
+        },
+        {
+          "element": 450,
+          "position": 7,
+          "multiplier": 2,
+          "isCaptain": true,
+          "isViceCaptain": false,
+          "webName": "Cunha",
+          "teamCode": 1,
+          "elementType": 3
+        },
+        {
+          "element": 381,
+          "position": 8,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": true,
+          "webName": "M.Salah",
+          "teamCode": 14,
+          "elementType": 3
+        },
+        {
+          "element": 661,
+          "position": 9,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Ekitiké",
+          "teamCode": 14,
+          "elementType": 4
+        },
+        {
+          "element": 666,
+          "position": 10,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Gyökeres",
+          "teamCode": 3,
+          "elementType": 4
+        },
+        {
+          "element": 249,
+          "position": 11,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "João Pedro",
+          "teamCode": 8,
+          "elementType": 4
+        },
+        {
+          "element": 470,
+          "position": 12,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Dúbravka",
+          "teamCode": 90,
+          "elementType": 1
+        },
+        {
+          "element": 441,
+          "position": 13,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Dorgu",
+          "teamCode": 1,
+          "elementType": 2
+        },
+        {
+          "element": 38,
+          "position": 14,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Konsa",
+          "teamCode": 7,
+          "elementType": 2
+        },
+        {
+          "element": 211,
+          "position": 15,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "A.Ramsey",
+          "teamCode": 90,
+          "elementType": 3
+        }
+      ]
+    },
+    {
+      "entryId": 5905295,
+      "playerName": "Mark Hogben",
+      "teamName": "The 202",
+      "picks": [
+        {
+          "element": 366,
+          "position": 1,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "A.Becker",
+          "teamCode": 14,
+          "elementType": 1
+        },
+        {
+          "element": 506,
+          "position": 2,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Murillo",
+          "teamCode": 17,
+          "elementType": 2
+        },
+        {
+          "element": 224,
+          "position": 3,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Cucurella",
+          "teamCode": 8,
+          "elementType": 2
+        },
+        {
+          "element": 72,
+          "position": 4,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Senesi",
+          "teamCode": 91,
+          "elementType": 2
+        },
+        {
+          "element": 382,
+          "position": 5,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Wirtz",
+          "teamCode": 14,
+          "elementType": 3
+        },
+        {
+          "element": 18,
+          "position": 6,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Madueke",
+          "teamCode": 3,
+          "elementType": 3
+        },
+        {
+          "element": 515,
+          "position": 7,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Gibbs-White",
+          "teamCode": 17,
+          "elementType": 3
+        },
+        {
+          "element": 236,
+          "position": 8,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Neto",
+          "teamCode": 8,
+          "elementType": 3
+        },
+        {
+          "element": 661,
+          "position": 9,
+          "multiplier": 2,
+          "isCaptain": true,
+          "isViceCaptain": false,
+          "webName": "Ekitiké",
+          "teamCode": 14,
+          "elementType": 4
+        },
+        {
+          "element": 64,
+          "position": 10,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": true,
+          "webName": "Watkins",
+          "teamCode": 7,
+          "elementType": 4
+        },
+        {
+          "element": 283,
+          "position": 11,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Mateta",
+          "teamCode": 31,
+          "elementType": 4
+        },
+        {
+          "element": 287,
+          "position": 12,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Pickford",
+          "teamCode": 11,
+          "elementType": 1
+        },
+        {
+          "element": 575,
+          "position": 13,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Van de Ven",
+          "teamCode": 6,
+          "elementType": 2
+        },
+        {
+          "element": 19,
+          "position": 14,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Martinelli",
+          "teamCode": 3,
+          "elementType": 3
+        },
+        {
+          "element": 5,
+          "position": 15,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Gabriel",
+          "teamCode": 3,
+          "elementType": 2
+        }
+      ]
+    },
+    {
+      "entryId": 5114501,
+      "playerName": "Jamie Marshall",
+      "teamName": "Fortune and Glory",
+      "picks": [
+        {
+          "element": 220,
+          "position": 1,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Sánchez",
+          "teamCode": 8,
+          "elementType": 1
+        },
+        {
+          "element": 7,
+          "position": 2,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Calafiori",
+          "teamCode": 3,
+          "elementType": 2
+        },
+        {
+          "element": 226,
+          "position": 3,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Chalobah",
+          "teamCode": 8,
+          "elementType": 2
+        },
+        {
+          "element": 6,
+          "position": 4,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Saliba",
+          "teamCode": 3,
+          "elementType": 2
+        },
+        {
+          "element": 384,
+          "position": 5,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Gakpo",
+          "teamCode": 14,
+          "elementType": 3
+        },
+        {
+          "element": 580,
+          "position": 6,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Johnson",
+          "teamCode": 31,
+          "elementType": 3
+        },
+        {
+          "element": 82,
+          "position": 7,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Semenyo",
+          "teamCode": 91,
+          "elementType": 3
+        },
+        {
+          "element": 381,
+          "position": 8,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": true,
+          "webName": "M.Salah",
+          "teamCode": 14,
+          "elementType": 3
+        },
+        {
+          "element": 249,
+          "position": 9,
+          "multiplier": 2,
+          "isCaptain": true,
+          "isViceCaptain": false,
+          "webName": "João Pedro",
+          "teamCode": 8,
+          "elementType": 4
+        },
+        {
+          "element": 525,
+          "position": 10,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Wood",
+          "teamCode": 17,
+          "elementType": 4
+        },
+        {
+          "element": 661,
+          "position": 11,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Ekitiké",
+          "teamCode": 14,
+          "elementType": 4
+        },
+        {
+          "element": 567,
+          "position": 12,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Kinsky",
+          "teamCode": 6,
+          "elementType": 1
+        },
+        {
+          "element": 427,
+          "position": 13,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Reijnders",
+          "teamCode": 43,
+          "elementType": 3
+        },
+        {
+          "element": 72,
+          "position": 14,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Senesi",
+          "teamCode": 91,
+          "elementType": 2
+        },
+        {
+          "element": 347,
+          "position": 15,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Gudmundsson",
+          "teamCode": 2,
+          "elementType": 2
+        }
+      ]
+    },
+    {
+      "entryId": 6108677,
+      "playerName": "Jason Base",
+      "teamName": "Isakly What We Need",
+      "picks": [
+        {
+          "element": 502,
+          "position": 1,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Sels",
+          "teamCode": 17,
+          "elementType": 1
+        },
+        {
+          "element": 505,
+          "position": 2,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Milenković",
+          "teamCode": 17,
+          "elementType": 2
+        },
+        {
+          "element": 224,
+          "position": 3,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Cucurella",
+          "teamCode": 8,
+          "elementType": 2
+        },
+        {
+          "element": 575,
+          "position": 4,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Van de Ven",
+          "teamCode": 6,
+          "elementType": 2
+        },
+        {
+          "element": 236,
+          "position": 5,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Neto",
+          "teamCode": 8,
+          "elementType": 3
+        },
+        {
+          "element": 427,
+          "position": 6,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Reijnders",
+          "teamCode": 43,
+          "elementType": 3
+        },
+        {
+          "element": 119,
+          "position": 7,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Mbeumo",
+          "teamCode": 1,
+          "elementType": 3
+        },
+        {
+          "element": 582,
+          "position": 8,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": true,
+          "webName": "Kudus",
+          "teamCode": 6,
+          "elementType": 3
+        },
+        {
+          "element": 525,
+          "position": 9,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Wood",
+          "teamCode": 17,
+          "elementType": 4
+        },
+        {
+          "element": 430,
+          "position": 10,
+          "multiplier": 2,
+          "isCaptain": true,
+          "isViceCaptain": false,
+          "webName": "Haaland",
+          "teamCode": 43,
+          "elementType": 4
+        },
+        {
+          "element": 249,
+          "position": 11,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "João Pedro",
+          "teamCode": 8,
+          "elementType": 4
+        },
+        {
+          "element": 470,
+          "position": 12,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Dúbravka",
+          "teamCode": 90,
+          "elementType": 1
+        },
+        {
+          "element": 83,
+          "position": 13,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "O.Dango",
+          "teamCode": 94,
+          "elementType": 3
+        },
+        {
+          "element": 408,
+          "position": 14,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Rúben",
+          "teamCode": 43,
+          "elementType": 2
+        },
+        {
+          "element": 477,
+          "position": 15,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Livramento",
+          "teamCode": 4,
+          "elementType": 2
+        }
+      ]
+    },
+    {
+      "entryId": 5623640,
+      "playerName": "Andrew Cowling",
+      "teamName": "Cowlers FC",
+      "picks": [
+        {
+          "element": 502,
+          "position": 1,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Sels",
+          "teamCode": 17,
+          "elementType": 1
+        },
+        {
+          "element": 226,
+          "position": 2,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Chalobah",
+          "teamCode": 8,
+          "elementType": 2
+        },
+        {
+          "element": 224,
+          "position": 3,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Cucurella",
+          "teamCode": 8,
+          "elementType": 2
+        },
+        {
+          "element": 291,
+          "position": 4,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Tarkowski",
+          "teamCode": 11,
+          "elementType": 2
+        },
+        {
+          "element": 450,
+          "position": 5,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Cunha",
+          "teamCode": 1,
+          "elementType": 3
+        },
+        {
+          "element": 381,
+          "position": 6,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": true,
+          "webName": "M.Salah",
+          "teamCode": 14,
+          "elementType": 3
+        },
+        {
+          "element": 299,
+          "position": 7,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Ndiaye",
+          "teamCode": 11,
+          "elementType": 3
+        },
+        {
+          "element": 455,
+          "position": 8,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Mount",
+          "teamCode": 1,
+          "elementType": 3
+        },
+        {
+          "element": 64,
+          "position": 9,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Watkins",
+          "teamCode": 7,
+          "elementType": 4
+        },
+        {
+          "element": 525,
+          "position": 10,
+          "multiplier": 2,
+          "isCaptain": true,
+          "isViceCaptain": false,
+          "webName": "Wood",
+          "teamCode": 17,
+          "elementType": 4
+        },
+        {
+          "element": 249,
+          "position": 11,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "João Pedro",
+          "teamCode": 8,
+          "elementType": 4
+        },
+        {
+          "element": 184,
+          "position": 12,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Green",
+          "teamCode": 90,
+          "elementType": 1
+        },
+        {
+          "element": 573,
+          "position": 13,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Spence",
+          "teamCode": 6,
+          "elementType": 2
+        },
+        {
+          "element": 506,
+          "position": 14,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Murillo",
+          "teamCode": 17,
+          "elementType": 2
+        },
+        {
+          "element": 276,
+          "position": 15,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Devenny",
+          "teamCode": 31,
+          "elementType": 3
+        }
+      ]
+    },
+    {
+      "entryId": 5742237,
+      "playerName": "Lee Hopson",
+      "teamName": "Check your Emails",
+      "picks": [
+        {
+          "element": 220,
+          "position": 1,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Sánchez",
+          "teamCode": 8,
+          "elementType": 1
+        },
+        {
+          "element": 224,
+          "position": 2,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Cucurella",
+          "teamCode": 8,
+          "elementType": 2
+        },
+        {
+          "element": 575,
+          "position": 3,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Van de Ven",
+          "teamCode": 6,
+          "elementType": 2
+        },
+        {
+          "element": 506,
+          "position": 4,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Murillo",
+          "teamCode": 17,
+          "elementType": 2
+        },
+        {
+          "element": 419,
+          "position": 5,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Grealish",
+          "teamCode": 11,
+          "elementType": 3
+        },
+        {
+          "element": 427,
+          "position": 6,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Reijnders",
+          "teamCode": 43,
+          "elementType": 3
+        },
+        {
+          "element": 381,
+          "position": 7,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "M.Salah",
+          "teamCode": 14,
+          "elementType": 3
+        },
+        {
+          "element": 669,
+          "position": 8,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Ndoye",
+          "teamCode": 17,
+          "elementType": 3
+        },
+        {
+          "element": 525,
+          "position": 9,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": true,
+          "webName": "Wood",
+          "teamCode": 17,
+          "elementType": 4
+        },
+        {
+          "element": 249,
+          "position": 10,
+          "multiplier": 2,
+          "isCaptain": true,
+          "isViceCaptain": false,
+          "webName": "João Pedro",
+          "teamCode": 8,
+          "elementType": 4
+        },
+        {
+          "element": 217,
+          "position": 11,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Foster",
+          "teamCode": 90,
+          "elementType": 4
+        },
+        {
+          "element": 470,
+          "position": 12,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Dúbravka",
+          "teamCode": 90,
+          "elementType": 1
+        },
+        {
+          "element": 683,
+          "position": 13,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Alderete",
+          "teamCode": 56,
+          "elementType": 2
+        },
+        {
+          "element": 335,
+          "position": 14,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "King",
+          "teamCode": 54,
+          "elementType": 3
+        },
+        {
+          "element": 542,
+          "position": 15,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Seelt",
+          "teamCode": 56,
+          "elementType": 2
+        }
+      ]
+    },
+    {
+      "entryId": 4223228,
+      "playerName": "Paul Cowley",
+      "teamName": "Lukakugate",
+      "picks": [
+        {
+          "element": 502,
+          "position": 1,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Sels",
+          "teamCode": 17,
+          "elementType": 1
+        },
+        {
+          "element": 224,
+          "position": 2,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Cucurella",
+          "teamCode": 8,
+          "elementType": 2
+        },
+        {
+          "element": 568,
+          "position": 3,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Pedro Porro",
+          "teamCode": 6,
+          "elementType": 2
+        },
+        {
+          "element": 443,
+          "position": 4,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Shaw",
+          "teamCode": 1,
+          "elementType": 2
+        },
+        {
+          "element": 449,
+          "position": 5,
+          "multiplier": 2,
+          "isCaptain": true,
+          "isViceCaptain": false,
+          "webName": "B.Fernandes",
+          "teamCode": 1,
+          "elementType": 3
+        },
+        {
+          "element": 427,
+          "position": 6,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Reijnders",
+          "teamCode": 43,
+          "elementType": 3
+        },
+        {
+          "element": 669,
+          "position": 7,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Ndoye",
+          "teamCode": 17,
+          "elementType": 3
+        },
+        {
+          "element": 580,
+          "position": 8,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Johnson",
+          "teamCode": 31,
+          "elementType": 3
+        },
+        {
+          "element": 525,
+          "position": 9,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": true,
+          "webName": "Wood",
+          "teamCode": 17,
+          "elementType": 4
+        },
+        {
+          "element": 661,
+          "position": 10,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Ekitiké",
+          "teamCode": 14,
+          "elementType": 4
+        },
+        {
+          "element": 430,
+          "position": 11,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Haaland",
+          "teamCode": 43,
+          "elementType": 4
+        },
+        {
+          "element": 470,
+          "position": 12,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Dúbravka",
+          "teamCode": 90,
+          "elementType": 1
+        },
+        {
+          "element": 436,
+          "position": 13,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "De Ligt",
+          "teamCode": 1,
+          "elementType": 2
+        },
+        {
+          "element": 82,
+          "position": 14,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Semenyo",
+          "teamCode": 91,
+          "elementType": 3
+        },
+        {
+          "element": 72,
+          "position": 15,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Senesi",
+          "teamCode": 91,
+          "elementType": 2
+        }
+      ]
+    },
+    {
+      "entryId": 7316166,
+      "playerName": "Ricky Hopson",
+      "teamName": "New Jersey United",
+      "picks": [
+        {
+          "element": 502,
+          "position": 1,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Sels",
+          "teamCode": 17,
+          "elementType": 1
+        },
+        {
+          "element": 224,
+          "position": 2,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Cucurella",
+          "teamCode": 8,
+          "elementType": 2
+        },
+        {
+          "element": 507,
+          "position": 3,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Aina",
+          "teamCode": 17,
+          "elementType": 2
+        },
+        {
+          "element": 477,
+          "position": 4,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Livramento",
+          "teamCode": 4,
+          "elementType": 2
+        },
+        {
+          "element": 47,
+          "position": 5,
+          "multiplier": 2,
+          "isCaptain": true,
+          "isViceCaptain": false,
+          "webName": "Rogers",
+          "teamCode": 7,
+          "elementType": 3
+        },
+        {
+          "element": 381,
+          "position": 6,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "M.Salah",
+          "teamCode": 14,
+          "elementType": 3
+        },
+        {
+          "element": 119,
+          "position": 7,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Mbeumo",
+          "teamCode": 1,
+          "elementType": 3
+        },
+        {
+          "element": 669,
+          "position": 8,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Ndoye",
+          "teamCode": 17,
+          "elementType": 3
+        },
+        {
+          "element": 597,
+          "position": 9,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Richarlison",
+          "teamCode": 6,
+          "elementType": 4
+        },
+        {
+          "element": 64,
+          "position": 10,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Watkins",
+          "teamCode": 7,
+          "elementType": 4
+        },
+        {
+          "element": 249,
+          "position": 11,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": true,
+          "webName": "João Pedro",
+          "teamCode": 8,
+          "elementType": 4
+        },
+        {
+          "element": 470,
+          "position": 12,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Dúbravka",
+          "teamCode": 90,
+          "elementType": 1
+        },
+        {
+          "element": 673,
+          "position": 13,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "J.Palhinha",
+          "teamCode": 6,
+          "elementType": 3
+        },
+        {
+          "element": 410,
+          "position": 14,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Lewis",
+          "teamCode": 43,
+          "elementType": 2
+        },
+        {
+          "element": 569,
+          "position": 15,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Romero",
+          "teamCode": 6,
+          "elementType": 2
+        }
+      ]
+    },
+    {
+      "entryId": 6578949,
+      "playerName": "Marc Hopson",
+      "teamName": "Peter Siddle’s Lunch",
+      "picks": [
+        {
+          "element": 502,
+          "position": 1,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Sels",
+          "teamCode": 17,
+          "elementType": 1
+        },
+        {
+          "element": 505,
+          "position": 2,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Milenković",
+          "teamCode": 17,
+          "elementType": 2
+        },
+        {
+          "element": 568,
+          "position": 3,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Pedro Porro",
+          "teamCode": 6,
+          "elementType": 2
+        },
+        {
+          "element": 225,
+          "position": 4,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "James",
+          "teamCode": 8,
+          "elementType": 2
+        },
+        {
+          "element": 381,
+          "position": 5,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": true,
+          "webName": "M.Salah",
+          "teamCode": 14,
+          "elementType": 3
+        },
+        {
+          "element": 580,
+          "position": 6,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Johnson",
+          "teamCode": 31,
+          "elementType": 3
+        },
+        {
+          "element": 449,
+          "position": 7,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "B.Fernandes",
+          "teamCode": 1,
+          "elementType": 3
+        },
+        {
+          "element": 419,
+          "position": 8,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Grealish",
+          "teamCode": 11,
+          "elementType": 3
+        },
+        {
+          "element": 238,
+          "position": 9,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Estêvão",
+          "teamCode": 8,
+          "elementType": 3
+        },
+        {
+          "element": 249,
+          "position": 10,
+          "multiplier": 2,
+          "isCaptain": true,
+          "isViceCaptain": false,
+          "webName": "João Pedro",
+          "teamCode": 8,
+          "elementType": 4
+        },
+        {
+          "element": 525,
+          "position": 11,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Wood",
+          "teamCode": 17,
+          "elementType": 4
+        },
+        {
+          "element": 470,
+          "position": 12,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Dúbravka",
+          "teamCode": 90,
+          "elementType": 1
+        },
+        {
+          "element": 441,
+          "position": 13,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Dorgu",
+          "teamCode": 1,
+          "elementType": 2
+        },
+        {
+          "element": 8,
+          "position": 14,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "J.Timber",
+          "teamCode": 3,
+          "elementType": 2
+        },
+        {
+          "element": 365,
+          "position": 15,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Nmecha",
+          "teamCode": 2,
+          "elementType": 4
+        }
+      ]
+    },
+    {
+      "entryId": 2761555,
+      "playerName": "Dickster Bishop",
+      "teamName": "Miso  Consadole",
+      "picks": [
+        {
+          "element": 502,
+          "position": 1,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Sels",
+          "teamCode": 17,
+          "elementType": 1
+        },
+        {
+          "element": 291,
+          "position": 2,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Tarkowski",
+          "teamCode": 11,
+          "elementType": 2
+        },
+        {
+          "element": 436,
+          "position": 3,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "De Ligt",
+          "teamCode": 1,
+          "elementType": 2
+        },
+        {
+          "element": 507,
+          "position": 4,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Aina",
+          "teamCode": 17,
+          "elementType": 2
+        },
+        {
+          "element": 582,
+          "position": 5,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Kudus",
+          "teamCode": 6,
+          "elementType": 3
+        },
+        {
+          "element": 450,
+          "position": 6,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": true,
+          "webName": "Cunha",
+          "teamCode": 1,
+          "elementType": 3
+        },
+        {
+          "element": 237,
+          "position": 7,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Enzo",
+          "teamCode": 8,
+          "elementType": 3
+        },
+        {
+          "element": 580,
+          "position": 8,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Johnson",
+          "teamCode": 31,
+          "elementType": 3
+        },
+        {
+          "element": 525,
+          "position": 9,
+          "multiplier": 2,
+          "isCaptain": true,
+          "isViceCaptain": false,
+          "webName": "Wood",
+          "teamCode": 17,
+          "elementType": 4
+        },
+        {
+          "element": 249,
+          "position": 10,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "João Pedro",
+          "teamCode": 8,
+          "elementType": 4
+        },
+        {
+          "element": 430,
+          "position": 11,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Haaland",
+          "teamCode": 43,
+          "elementType": 4
+        },
+        {
+          "element": 470,
+          "position": 12,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Dúbravka",
+          "teamCode": 90,
+          "elementType": 1
+        },
+        {
+          "element": 348,
+          "position": 13,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Rodon",
+          "teamCode": 2,
+          "elementType": 2
+        },
+        {
+          "element": 36,
+          "position": 14,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Cash",
+          "teamCode": 7,
+          "elementType": 2
+        },
+        {
+          "element": 553,
+          "position": 15,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Talbi",
+          "teamCode": 56,
+          "elementType": 3
+        }
+      ]
+    }
+  ]
+}

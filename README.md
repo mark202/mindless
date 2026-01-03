@@ -7,12 +7,14 @@ Automated pipeline + static Next.js site for the Mindless fantasy league (ID 123
 - `npm run dev` – start Next.js locally
 - `npm run build` / `npm start` – production build + serve
 - `npm run ingest` – run `scripts/fetch-fpl.ts` then `scripts/derive.ts` to refresh data
+- `npm run summary` – generate `public/data/derived/weekly-email-{gw}.html` from the latest finished GW
 
 ## Data flow
 
 1. `scripts/fetch-fpl.ts` loads `config/mindless.config.json`, fetches `bootstrap-static`, league members (with pagination), and each entry's history. Raw responses are cached in `public/data/raw/entry/{entryId}.json` and lightweight summaries in `public/data/bootstrap.json` + `public/data/managers.json`.
 2. `scripts/derive.ts` builds deterministic JSON outputs:
    - `public/data/gameweeks/{gw}.json` – per-GW points table
+   - `public/data/gameweeks/{gw}-teams.json` – per-GW manager picks (squads)
    - `public/data/derived/weeklies.json` – weekly ranks + prizes
    - `public/data/derived/months.json` – month blocks + prizes
    - `public/data/derived/season.json` – season leaderboard with winnings breakdown

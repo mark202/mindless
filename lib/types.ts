@@ -53,6 +53,39 @@ export type GameweekFile = {
   rows: GameweekPointsRow[];
 };
 
+export type GameweekPick = {
+  element: number;
+  position: number;
+  multiplier: number;
+  isCaptain: boolean;
+  isViceCaptain: boolean;
+  webName?: string;
+  teamCode?: number;
+  elementType?: number;
+};
+
+export type GameweekTeamsFile = {
+  gw: number;
+  squads: Array<{
+    entryId: number;
+    playerName: string;
+    teamName: string;
+    picks: GameweekPick[];
+  }>;
+};
+
+export type LiveElement = {
+  id: number;
+  web_name: string;
+  team_code: number;
+  element_type: number;
+  stats: { total_points: number };
+};
+
+export type GameweekLiveFile = {
+  elements: LiveElement[];
+};
+
 export type WeeklyRankedRow = {
   entryId: number;
   playerName: string;
@@ -124,6 +157,13 @@ export type BootstrapEvent = {
 
 export type Bootstrap = {
   events: BootstrapEvent[];
+  // We only need a subset for squad display; keep it permissive.
+  elements?: Array<{ id: number; web_name: string; team_code: number; element_type: number }>;
+};
+
+export type WeeklyNarrative = {
+  gw: number;
+  summary: string;
 };
 
 export type EntryHistory = {

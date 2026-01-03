@@ -1,6 +1,14 @@
 import path from 'node:path';
 import { promises as fs } from 'node:fs';
-import type { Bootstrap, EntryHistory, Manager, ManagersFile } from '../lib/types';
+import type {
+  Bootstrap,
+  EntryHistory,
+  GameweekTeamsFile,
+  Manager,
+  ManagersFile,
+  GameweekPick,
+  GameweekLiveFile
+} from '../lib/types';
 import { delay, ensureDir, fetchJson, loadConfig, writeJson } from './utils';
 
 async function fetchLeagueMembers(leagueId: number) {
@@ -22,6 +30,14 @@ async function fetchEntryHistory(entryId: number): Promise<EntryHistory> {
   return fetchJson<EntryHistory>(`/entry/${entryId}/history/`);
 }
 
+async function fetchEntryPicks(entryId: number, gw: number) {
+  return fetchJson<any>(`/entry/${entryId}/event/${gw}/picks/`);
+}
+
+async function fetchEventLive(gw: number): Promise<GameweekLiveFile> {
+  return fetchJson<GameweekLiveFile>(`/event/${gw}/live/`);
+}
+
 async function main() {
   const config = await loadConfig();
   const dataRoot = path.join(process.cwd(), 'public', 'data');
@@ -31,8 +47,20 @@ async function main() {
   const bootstrap = await fetchJson<Bootstrap>('/bootstrap-static/');
   await writeJson(path.join('public', 'data', 'bootstrap.json'), bootstrap);
 
+  const elementMeta = new Map<number, { webName: string; teamCode: number; elementType: number }>();
+  bootstrap.elements?.forEach((el: any) => {
+    elementMeta.set(el.id, { webName: el.web_name, teamCode: el.team_code, elementType: el.element_type });
+  });
+
   const finishedGws = bootstrap.events.filter((e) => e.finished).map((e) => e.id);
   const currentEvent = bootstrap.events.find((e) => e.is_current) ?? null;
+
+  for (const gw of finishedGws) {
+    console.log(`Fetching live data for GW ${gw}`);
+    const live = await fetchEventLive(gw);
+    await writeJson(path.join('public', 'data', 'gameweeks', `${gw}-live.json`), live);
+    await delay(150);
+  }
 
   console.log('Fetching league members...');
   const memberResults = await fetchLeagueMembers(config.leagueId);
@@ -54,11 +82,45 @@ async function main() {
   const rawDir = path.join('public', 'data', 'raw', 'entry');
   await ensureDir(path.join(process.cwd(), rawDir));
 
+  const picksByGw: Record<number, GameweekTeamsFile['squads']> = {};
+
   for (const manager of managers) {
     console.log(`Fetching history for ${manager.playerName} (${manager.entryId})`);
     const history = await fetchEntryHistory(manager.entryId);
     await writeJson(path.join(rawDir, `${manager.entryId}.json`), history);
-    await delay(300);
+    for (const gw of finishedGws) {
+      const picks = await fetchEntryPicks(manager.entryId, gw);
+      const mappedPicks: GameweekPick[] =
+        picks?.picks?.map((pick: any) => {
+          const meta = elementMeta.get(pick.element);
+          return {
+            element: pick.element,
+            position: pick.position,
+            multiplier: pick.multiplier,
+            isCaptain: pick.is_captain,
+            isViceCaptain: pick.is_vice_captain,
+            webName: meta?.webName,
+            teamCode: meta?.teamCode,
+            elementType: meta?.elementType
+          };
+        }) ?? [];
+      picksByGw[gw] = picksByGw[gw] || [];
+      picksByGw[gw].push({
+        entryId: manager.entryId,
+        playerName: manager.playerName,
+        teamName: manager.teamName,
+        picks: mappedPicks
+      });
+      await delay(150);
+    }
+    await delay(150);
+  }
+
+  // Write picks grouped per finished GW
+  for (const gw of finishedGws) {
+    const squads = picksByGw[gw] || [];
+    const teamsFile: GameweekTeamsFile = { gw, squads };
+    await writeJson(path.join('public', 'data', 'gameweeks', `${gw}-teams.json`), teamsFile);
   }
 
   await writeJson(path.join('public', 'data', 'derived', 'latest.json'), {

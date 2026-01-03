@@ -25,6 +25,9 @@ jobs:
       - name: Ingest
         run: npm run ingest
 
+      - name: Generate weekly summary
+        run: npm run summary
+
       - name: Commit data artifacts
         run: |
           git config user.name "mindless-bot"

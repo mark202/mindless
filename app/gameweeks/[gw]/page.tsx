@@ -2,12 +2,13 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { mindlessConfig } from '../../../lib/appConfig';
 import { formatCurrency, formatNumber } from '../../../lib/format';
-import { loadGameweek, loadWeeklies } from '../../../lib/data';
+import { loadGameweek, loadWeeklies, loadWeeklyNarratives } from '../../../lib/data';
 
 export default async function GameweekDetail({ params }: { params: { gw: string } }) {
   const gw = Number(params.gw);
-  const [gameweek, weeklies] = await Promise.all([loadGameweek(gw), loadWeeklies()]);
+  const [gameweek, weeklies, narratives] = await Promise.all([loadGameweek(gw), loadWeeklies(), loadWeeklyNarratives()]);
   const weekly = weeklies.find((w) => w.gw === gw);
+  const narrative = narratives.find((n) => n.gw === gw);
 
   if (!gameweek && !weekly) {
     notFound();
@@ -18,20 +19,21 @@ export default async function GameweekDetail({ params }: { params: { gw: string 
   return (
     <section className="space-y-4">
       <div className="table-card p-5">
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-gray-500">Gameweek</p>
-            <h1 className="text-2xl font-semibold text-white">GW {gw}</h1>
-            <p className="text-sm text-gray-400">
-              Deadline {gameweek?.deadlineTime ? new Date(gameweek.deadlineTime).toLocaleString() : 'TBC'}
-            </p>
-          </div>
-          <div className="flex gap-2">
-            <Link href={`/gameweeks/${gw}/print`} className="btn">Print summary</Link>
-            <Link href="/gameweeks" className="rounded-lg border border-gray-800 px-3 py-2 text-sm text-gray-200 hover:border-brand-400">
-              Back
-            </Link>
-          </div>
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <p className="text-xs uppercase tracking-[0.3em] text-gray-500">Gameweek</p>
+              <h1 className="text-2xl font-semibold text-white">GW {gw}</h1>
+              <p className="text-sm text-gray-400">
+                Deadline {gameweek?.deadlineTime ? new Date(gameweek.deadlineTime).toLocaleString() : 'TBC'}
+              </p>
+            </div>
+            <div className="flex gap-2">
+              <Link href={`/gameweeks/${gw}/teams`} className="btn">View teams</Link>
+              <Link href={`/gameweeks/${gw}/print`} className="btn">Print summary</Link>
+              <Link href="/gameweeks" className="rounded-lg border border-gray-800 px-3 py-2 text-sm text-gray-200 hover:border-brand-400">
+                Back
+              </Link>
+            </div>
         </div>
       </div>
 
@@ -62,6 +64,13 @@ export default async function GameweekDetail({ params }: { params: { gw: string 
         </table>
         {rows.length === 0 && <div className="py-4 text-center text-gray-400">No data for this GW yet.</div>}
       </div>
+
+      {narrative?.summary && (
+        <div className="table-card p-5">
+          <p className="text-xs uppercase tracking-[0.25em] text-gray-500">AI summary</p>
+          <p className="mt-2 text-sm text-gray-200">{narrative.summary}</p>
+        </div>
+      )}
     </section>
   );
 }

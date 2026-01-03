@@ -66,7 +66,7 @@ async function main() {
   });
 
   const captainCounts = new Map<number, { count: number; pts: number; name: string }>();
-  let topPlayer: { id: number; name: string; pts: number } | null = null;
+  let topPlayer: { id: number; name: string; pts: number } | undefined;
   teams.squads.forEach((squad) => {
     squad.picks.forEach((pick) => {
       const meta = playerMeta.get(pick.element);
@@ -81,8 +81,9 @@ async function main() {
     });
   });
 
-  const mostCaptained = Array.from(captainCounts.values()).sort((a, b) => b.count - a.count)[0];
-  const flopCaptain = Array.from(captainCounts.values())
+  const captainList = Array.from(captainCounts.values());
+  const mostCaptained = captainList.length ? captainList.sort((a, b) => b.count - a.count)[0] : undefined;
+  const flopCaptain = captainList
     .filter((c) => c.count > 1)
     .sort((a, b) => a.pts - b.pts)[0];
 

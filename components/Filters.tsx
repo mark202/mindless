@@ -16,9 +16,6 @@ export function Filters({ value, onChange, placeholder }: { value: string; onCha
           placeholder={placeholder ?? 'Search managers or teams'}
           className="w-full rounded-xl border border-gray-800 bg-gray-900/60 px-4 py-3 text-sm text-gray-100 shadow-inner outline-none focus:border-brand-400 focus:bg-gray-900"
         />
-        <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs uppercase tracking-wide text-gray-500">
-          Search
-        </span>
       </div>
     </div>
   );

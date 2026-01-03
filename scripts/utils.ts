@@ -23,24 +23,24 @@ export function getPrizeForRank(prizeTable: Record<string, number>, rank: number
   return typeof value === 'number' ? value : 0;
 }
 
-export type RankableRow<T> = T & { points: number; entryId: number };
+export type RankableRow<T extends object> = T & { points: number; entryId: number };
 
-export function rankRows<T extends RankableRow<T>>(
-  rows: T[],
+export function rankRows<T extends object>(
+  rows: Array<RankableRow<T>>,
   tieMode: TieMode,
   prizeTable: Record<string, number>
-) {
+): Array<RankableRow<T> & { rank: number; prize: number }> {
   const sorted = [...rows].sort((a, b) => {
     if (b.points !== a.points) return b.points - a.points;
     return a.entryId - b.entryId;
   });
 
-  const ranked: Array<T & { rank: number; prize: number }> = [];
+  const ranked: Array<RankableRow<T> & { rank: number; prize: number }> = [];
 
   let index = 0;
   while (index < sorted.length) {
     const groupPoints = sorted[index].points;
-    const group: T[] = [];
+    const group: Array<RankableRow<T>> = [];
     while (index + group.length < sorted.length && sorted[index + group.length].points === groupPoints) {
       group.push(sorted[index + group.length]);
     }
@@ -56,7 +56,7 @@ export function rankRows<T extends RankableRow<T>>(
         ranked.push({ ...row, rank, prize: share });
       });
     } else {
-      group.forEach((row, offset) => {
+      group.forEach((row) => {
         const computedRank = tieMode === 'deterministic' ? ranked.length + 1 : rank;
         const prize = getPrizeForRank(prizeTable, computedRank);
         ranked.push({ ...row, rank: computedRank, prize });

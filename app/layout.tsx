@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -14,8 +15,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="mx-auto max-w-6xl px-4 py-6">
           <header className="mb-6 flex flex-wrap items-center justify-between gap-4">
             <Link href="/" className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-brand-800 text-xl font-bold text-white shadow-lg">
-                MF
+              <div className="relative h-12 w-12 overflow-hidden rounded-2xl border border-gray-800 bg-gray-900/60">
+                <Image src="/image.png" alt="Mindless crest" fill className="object-contain" sizes="48px" />
               </div>
               <div>
                 <div className="text-xs uppercase tracking-[0.3em] text-gray-400">Mindless FPL</div>

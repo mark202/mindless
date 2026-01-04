@@ -4,6 +4,8 @@ import type {
   Bootstrap,
   EntryHistory,
   GameweekFile,
+  GameweekLiveFile,
+  GameweekTeamsFile,
   MonthlyResult,
   PrizeLedgerItem,
   SeasonFile,
@@ -26,6 +28,22 @@ async function loadEntryHistory(entryId: number): Promise<EntryHistory> {
 
 function findEvent(events: Bootstrap['events'], gw: number) {
   return events.find((event) => event.id === gw);
+}
+
+async function loadTeams(gw: number): Promise<GameweekTeamsFile | null> {
+  try {
+    return await readJson<GameweekTeamsFile>(path.join('public', 'data', 'gameweeks', `${gw}-teams.json`));
+  } catch (error) {
+    return null;
+  }
+}
+
+async function loadLive(gw: number): Promise<GameweekLiveFile | null> {
+  try {
+    return await readJson<GameweekLiveFile>(path.join('public', 'data', 'gameweeks', `${gw}-live.json`));
+  } catch (error) {
+    return null;
+  }
 }
 
 async function main() {
@@ -54,20 +72,41 @@ async function main() {
   const weeklies: WeeklyResult[] = [];
   const gameweekPoints = new Map<number, Map<number, { points: number; totalPoints: number }>>();
   const prizeLedger: PrizeLedgerItem[] = [];
+  const cumulativeByEntry = new Map<number, number>();
 
   await ensureDir(path.join(process.cwd(), 'public', 'data', 'gameweeks'));
 
   for (const gw of allHistoryGws) {
+    const teams = await loadTeams(gw);
+    const live = await loadLive(gw);
+    const livePoints = new Map<number, number>();
+    live?.elements?.forEach((el) => livePoints.set(el.id, el.stats?.total_points ?? 0));
+
     const isFinished = finishedSet.has(gw);
     const rows = managers.managers.map((manager) => {
       const history = histories.get(manager.entryId);
       const event = history?.current.find((item) => item.event === gw);
+      let adjustedPoints = (event?.points ?? 0) + (event?.event_transfers_cost ?? 0);
+
+      if (teams) {
+        const squad = teams.squads.find((s) => s.entryId === manager.entryId);
+        if (squad) {
+          adjustedPoints = squad.picks.reduce((sum, pick) => {
+            const pts = livePoints.get(pick.element) ?? 0;
+            return sum + pick.multiplier * pts;
+          }, 0);
+        }
+      }
+
+      const prevTotal = cumulativeByEntry.get(manager.entryId) ?? 0;
+      const totalPoints = prevTotal + adjustedPoints;
+      cumulativeByEntry.set(manager.entryId, totalPoints);
       return {
         entryId: manager.entryId,
         playerName: manager.playerName,
         teamName: manager.teamName,
-        points: event?.points ?? 0,
-        totalPoints: event?.total_points ?? 0
+        points: adjustedPoints,
+        totalPoints
       };
     });
 

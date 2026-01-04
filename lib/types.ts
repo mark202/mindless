@@ -188,6 +188,7 @@ export type EntryHistory = {
   current: Array<{
     event: number;
     points: number;
+    event_transfers_cost?: number;
     total_points: number;
   }>;
 };

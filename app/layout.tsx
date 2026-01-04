@@ -26,6 +26,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               {[
                 { href: '/', label: 'Leaderboard' },
                 { href: '/gameweeks', label: 'Gameweeks' },
+                { href: '/fixtures', label: 'Fixtures' },
+                { href: '/stats', label: 'Stats' },
                 { href: '/months', label: 'Months' },
                 { href: '/prizes', label: 'Prizes' },
                 { href: '/rules', label: 'Rules' }

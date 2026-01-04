@@ -7,7 +7,9 @@ import type {
   Manager,
   ManagersFile,
   GameweekPick,
-  GameweekLiveFile
+  GameweekLiveFile,
+  FixturesFile,
+  Fixture
 } from '../lib/types';
 import { delay, ensureDir, fetchJson, loadConfig, writeJson } from './utils';
 
@@ -38,6 +40,10 @@ async function fetchEventLive(gw: number): Promise<GameweekLiveFile> {
   return fetchJson<GameweekLiveFile>(`/event/${gw}/live/`);
 }
 
+async function fetchFixtures(): Promise<Fixture[]> {
+  return fetchJson<Fixture[]>(`/fixtures/`);
+}
+
 async function main() {
   const config = await loadConfig();
   const dataRoot = path.join(process.cwd(), 'public', 'data');
@@ -51,6 +57,11 @@ async function main() {
   bootstrap.elements?.forEach((el: any) => {
     elementMeta.set(el.id, { webName: el.web_name, teamCode: el.team_code, elementType: el.element_type });
   });
+
+  console.log('Fetching fixtures...');
+  const fixtures = await fetchFixtures();
+  const fixturesFile: FixturesFile = { fixtures, fetchedAt: new Date().toISOString() };
+  await writeJson(path.join('public', 'data', 'fixtures.json'), fixturesFile);
 
   const finishedGws = bootstrap.events.filter((e) => e.finished).map((e) => e.id);
   const currentEvent = bootstrap.events.find((e) => e.is_current) ?? null;

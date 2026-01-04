@@ -160,11 +160,28 @@ export type Bootstrap = {
   events: BootstrapEvent[];
   // We only need a subset for squad display; keep it permissive.
   elements?: Array<{ id: number; web_name: string; team_code: number; element_type: number }>;
+  teams?: Array<{ id: number; code: number; name: string; short_name: string }>;
 };
 
 export type WeeklyNarrative = {
   gw: number;
   summary: string;
+};
+
+export type Fixture = {
+  id: number;
+  event?: number | null;
+  kickoff_time?: string | null;
+  finished: boolean;
+  team_h: number;
+  team_a: number;
+  team_h_score?: number | null;
+  team_a_score?: number | null;
+};
+
+export type FixturesFile = {
+  fixtures: Fixture[];
+  fetchedAt: string;
 };
 
 export type EntryHistory = {

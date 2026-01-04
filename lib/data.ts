@@ -11,7 +11,8 @@ import {
   SeasonFile,
   WeeklyResult,
   PrizeLedgerItem,
-  WeeklyNarrative
+  WeeklyNarrative,
+  FixturesFile
 } from './types';
 
 const dataRoot = path.join(process.cwd(), 'public', 'data');
@@ -86,6 +87,10 @@ export async function loadGameweekLive(gw: number): Promise<GameweekLiveFile | n
 
 export async function loadWeeklyNarratives(): Promise<WeeklyNarrative[]> {
   return readJson<WeeklyNarrative[]>('derived/week-narratives.json', []);
+}
+
+export async function loadFixtures(): Promise<FixturesFile | null> {
+  return readJson<FixturesFile | null>('fixtures.json', null);
 }
 
 export async function loadLedgerForEntry(entryId: number): Promise<PrizeLedgerItem[]> {

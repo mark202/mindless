@@ -152,6 +152,7 @@ export type BootstrapEvent = {
   name: string;
   finished: boolean;
   is_current: boolean;
+  is_next?: boolean;
   deadline_time: string;
 };
 

@@ -5,6 +5,7 @@ import { loadBootstrap, loadWeeklies } from '../../lib/data';
 export default async function GameweeksPage() {
   const [weeklies, bootstrap] = await Promise.all([loadWeeklies(), loadBootstrap()]);
   const finishedSet = new Set(bootstrap.events.filter((e) => e.finished).map((e) => e.id));
+  const sortedWeeklies = [...weeklies].sort((a, b) => b.gw - a.gw);
 
   return (
     <section className="space-y-4">
@@ -20,7 +21,7 @@ export default async function GameweeksPage() {
       </div>
 
       <div className="card-grid">
-        {weeklies.map((week) => {
+        {sortedWeeklies.map((week) => {
           const status = finishedSet.has(week.gw) ? 'Finished' : 'Live';
           return (
             <Link

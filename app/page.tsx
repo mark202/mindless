@@ -19,7 +19,10 @@ export default async function HomePage() {
   const totalEvents = bootstrap.events.length || 38;
   const remainingGws = totalEvents - finishedGws.length;
   const latestWeekly = weeklies.find((w) => w.gw === Math.max(...weeklies.map((w) => w.gw)));
-  const nextDeadline = bootstrap.events.find((e) => e.is_current)?.deadline_time;
+  const nextDeadline =
+    bootstrap.events.find((e) => e.is_next)?.deadline_time ??
+    bootstrap.events.find((e) => e.is_current)?.deadline_time ??
+    null;
   const latestRanked = latestWeekly?.ranked ?? [];
 
   return (
@@ -32,7 +35,15 @@ export default async function HomePage() {
             <p className="text-sm text-gray-300">
               League {mindlessConfig.leagueId} · {finishedGws.length} GWs played · {remainingGws} remaining
             </p>
-            <p className="text-xs text-gray-400">Last update {lastUpdated ? new Date(lastUpdated).toLocaleString() : '—'}</p>
+            <p className="text-xs text-gray-400">
+              Last update{' '}
+              {lastUpdated
+                ? new Date(lastUpdated).toLocaleString('en-GB', {
+                    timeZone: mindlessConfig.timezone || 'Europe/London',
+                    hour12: false
+                  })
+                : '—'}
+            </p>
           </div>
           <div className="flex gap-3">
             <Link href="/gameweeks" className="btn">

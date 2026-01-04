@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { mindlessConfig } from '../../../lib/appConfig';
-import { formatCurrency, formatNumber } from '../../../lib/format';
+import { formatCurrency, formatDateTime, formatNumber } from '../../../lib/format';
 import { loadGameweek, loadWeeklies, loadWeeklyNarratives } from '../../../lib/data';
 
 export default async function GameweekDetail({ params }: { params: { gw: string } }) {
@@ -21,11 +21,11 @@ export default async function GameweekDetail({ params }: { params: { gw: string 
       <div className="table-card p-5">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
-              <p className="text-xs uppercase tracking-[0.3em] text-gray-500">Gameweek</p>
-              <h1 className="text-2xl font-semibold text-white">GW {gw}</h1>
-              <p className="text-sm text-gray-400">
-                Deadline {gameweek?.deadlineTime ? new Date(gameweek.deadlineTime).toLocaleString() : 'TBC'}
-              </p>
+            <p className="text-xs uppercase tracking-[0.3em] text-gray-500">Gameweek</p>
+            <h1 className="text-2xl font-semibold text-white">GW {gw}</h1>
+            <p className="text-sm text-gray-400">
+              Deadline {gameweek?.deadlineTime ? formatDateTime(gameweek.deadlineTime, mindlessConfig.timezone) : 'TBC'}
+            </p>
             </div>
             <div className="flex gap-2">
               <Link href={`/gameweeks/${gw}/teams`} className="btn">View teams</Link>

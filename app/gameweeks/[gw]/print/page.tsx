@@ -1,5 +1,5 @@
 import { mindlessConfig } from '../../../../lib/appConfig';
-import { formatCurrency, formatNumber } from '../../../../lib/format';
+import { formatCurrency, formatDateTime, formatNumber } from '../../../../lib/format';
 import { loadWeeklies } from '../../../../lib/data';
 
 export default async function GameweekPrint({ params }: { params: { gw: string } }) {

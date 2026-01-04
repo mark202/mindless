@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { LeaderboardTable } from '../components/LeaderboardTable';
 import { mindlessConfig } from '../lib/appConfig';
-import { formatCurrency, formatNumber } from '../lib/format';
+import { formatCurrency, formatDateTime, formatNumber } from '../lib/format';
 import { getLastUpdated, loadBootstrap, loadPrizes, loadSeason, loadWeeklies } from '../lib/data';
 
 export default async function HomePage() {
@@ -36,13 +36,7 @@ export default async function HomePage() {
               League {mindlessConfig.leagueId} · {finishedGws.length} GWs played · {remainingGws} remaining
             </p>
             <p className="text-xs text-gray-400">
-              Last update{' '}
-              {lastUpdated
-                ? new Date(lastUpdated).toLocaleString('en-GB', {
-                    timeZone: mindlessConfig.timezone || 'Europe/London',
-                    hour12: false
-                  })
-                : '—'}
+              Last update {lastUpdated ? formatDateTime(lastUpdated, mindlessConfig.timezone) : '—'}
             </p>
           </div>
           <div className="flex gap-3">
@@ -74,13 +68,13 @@ export default async function HomePage() {
             <div className="text-2xl font-semibold text-white">{finishedGws.length}</div>
             <p className="text-sm text-gray-400">{remainingGws} to go</p>
           </div>
-          <div className="rounded-2xl border border-white/5 bg-white/5 p-4">
-            <p className="text-xs uppercase tracking-[0.3em] text-gray-300">Next deadline</p>
-            <div className="text-lg font-semibold text-white">
-              {nextDeadline ? new Date(nextDeadline).toLocaleString() : 'TBC'}
+            <div className="rounded-2xl border border-white/5 bg-white/5 p-4">
+              <p className="text-xs uppercase tracking-[0.3em] text-gray-300">Next deadline</p>
+              <div className="text-lg font-semibold text-white">
+                {nextDeadline ? formatDateTime(nextDeadline, mindlessConfig.timezone) : 'TBC'}
+              </div>
+              <p className="text-sm text-gray-400">Premier League fixtures pending</p>
             </div>
-            <p className="text-sm text-gray-400">Premier League fixtures pending</p>
-          </div>
         </div>
       </section>
 

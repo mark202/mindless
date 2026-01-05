@@ -1648,47 +1648,47 @@
         "entryId": 7316166,
         "playerName": "Ricky Hopson",
         "teamName": "New Jersey United",
-        "points": 60,
+        "points": 64,
         "rank": 2,
         "prize": 6
-      },
-      {
-        "entryId": 5114501,
-        "playerName": "Jamie Marshall",
-        "teamName": "Fortune and Glory",
-        "points": 53,
-        "rank": 3,
-        "prize": 5
-      },
-      {
-        "entryId": 5623640,
-        "playerName": "Andrew Cowling",
-        "teamName": "Cowlers FC",
-        "points": 52,
-        "rank": 4,
-        "prize": 4
       },
       {
         "entryId": 5905295,
         "playerName": "Mark Hogben",
         "teamName": "The 202",
-        "points": 52,
+        "points": 57,
+        "rank": 3,
+        "prize": 5
+      },
+      {
+        "entryId": 5114501,
+        "playerName": "Jamie Marshall",
+        "teamName": "Fortune and Glory",
+        "points": 55,
+        "rank": 4,
+        "prize": 4
+      },
+      {
+        "entryId": 5623640,
+        "playerName": "Andrew Cowling",
+        "teamName": "Cowlers FC",
+        "points": 55,
         "rank": 5,
         "prize": 2.5
+      },
+      {
+        "entryId": 4223228,
+        "playerName": "Paul Cowley",
+        "teamName": "Lukakugate",
+        "points": 53,
+        "rank": 6,
+        "prize": 1.5
       },
       {
         "entryId": 6578949,
         "playerName": "Marc Hopson",
         "teamName": "Peter Siddle’s Lunch",
         "points": 51,
-        "rank": 6,
-        "prize": 1.5
-      },
-      {
-        "entryId": 4223228,
-        "playerName": "Paul Cowley",
-        "teamName": "Lukakugate",
-        "points": 46,
         "rank": 7,
         "prize": 1
       },
@@ -1696,7 +1696,7 @@
         "entryId": 5742237,
         "playerName": "Lee Hopson",
         "teamName": "Check your Emails",
-        "points": 46,
+        "points": 50,
         "rank": 8,
         "prize": 0
       },

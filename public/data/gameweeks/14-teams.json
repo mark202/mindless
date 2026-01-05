@@ -944,163 +944,6 @@
       ]
     },
     {
-      "entryId": 4223228,
-      "playerName": "Paul Cowley",
-      "teamName": "Lukakugate",
-      "picks": [
-        {
-          "element": 1,
-          "position": 1,
-          "multiplier": 1,
-          "isCaptain": false,
-          "isViceCaptain": false,
-          "webName": "Raya",
-          "teamCode": 3,
-          "elementType": 1
-        },
-        {
-          "element": 7,
-          "position": 2,
-          "multiplier": 1,
-          "isCaptain": false,
-          "isViceCaptain": true,
-          "webName": "Calafiori",
-          "teamCode": 3,
-          "elementType": 2
-        },
-        {
-          "element": 376,
-          "position": 3,
-          "multiplier": 1,
-          "isCaptain": false,
-          "isViceCaptain": false,
-          "webName": "Gomez",
-          "teamCode": 14,
-          "elementType": 2
-        },
-        {
-          "element": 443,
-          "position": 4,
-          "multiplier": 1,
-          "isCaptain": false,
-          "isViceCaptain": false,
-          "webName": "Shaw",
-          "teamCode": 1,
-          "elementType": 2
-        },
-        {
-          "element": 487,
-          "position": 5,
-          "multiplier": 1,
-          "isCaptain": false,
-          "isViceCaptain": false,
-          "webName": "Barnes",
-          "teamCode": 4,
-          "elementType": 3
-        },
-        {
-          "element": 82,
-          "position": 6,
-          "multiplier": 1,
-          "isCaptain": false,
-          "isViceCaptain": false,
-          "webName": "Semenyo",
-          "teamCode": 91,
-          "elementType": 3
-        },
-        {
-          "element": 236,
-          "position": 7,
-          "multiplier": 1,
-          "isCaptain": false,
-          "isViceCaptain": false,
-          "webName": "Neto",
-          "teamCode": 8,
-          "elementType": 3
-        },
-        {
-          "element": 16,
-          "position": 8,
-          "multiplier": 2,
-          "isCaptain": true,
-          "isViceCaptain": false,
-          "webName": "Saka",
-          "teamCode": 3,
-          "elementType": 3
-        },
-        {
-          "element": 249,
-          "position": 9,
-          "multiplier": 1,
-          "isCaptain": false,
-          "isViceCaptain": false,
-          "webName": "João Pedro",
-          "teamCode": 8,
-          "elementType": 4
-        },
-        {
-          "element": 714,
-          "position": 10,
-          "multiplier": 1,
-          "isCaptain": false,
-          "isViceCaptain": false,
-          "webName": "Woltemade",
-          "teamCode": 4,
-          "elementType": 4
-        },
-        {
-          "element": 430,
-          "position": 11,
-          "multiplier": 1,
-          "isCaptain": false,
-          "isViceCaptain": false,
-          "webName": "Haaland",
-          "teamCode": 43,
-          "elementType": 4
-        },
-        {
-          "element": 470,
-          "position": 12,
-          "multiplier": 0,
-          "isCaptain": false,
-          "isViceCaptain": false,
-          "webName": "Dúbravka",
-          "teamCode": 90,
-          "elementType": 1
-        },
-        {
-          "element": 237,
-          "position": 13,
-          "multiplier": 0,
-          "isCaptain": false,
-          "isViceCaptain": false,
-          "webName": "Enzo",
-          "teamCode": 8,
-          "elementType": 3
-        },
-        {
-          "element": 260,
-          "position": 14,
-          "multiplier": 0,
-          "isCaptain": false,
-          "isViceCaptain": false,
-          "webName": "Guéhi",
-          "teamCode": 31,
-          "elementType": 2
-        },
-        {
-          "element": 41,
-          "position": 15,
-          "multiplier": 0,
-          "isCaptain": false,
-          "isViceCaptain": false,
-          "webName": "Pau",
-          "teamCode": 7,
-          "elementType": 2
-        }
-      ]
-    },
-    {
       "entryId": 7316166,
       "playerName": "Ricky Hopson",
       "teamName": "New Jersey United",
@@ -1253,6 +1096,163 @@
           "isViceCaptain": false,
           "webName": "Hartman",
           "teamCode": 90,
+          "elementType": 2
+        }
+      ]
+    },
+    {
+      "entryId": 4223228,
+      "playerName": "Paul Cowley",
+      "teamName": "Lukakugate",
+      "picks": [
+        {
+          "element": 1,
+          "position": 1,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Raya",
+          "teamCode": 3,
+          "elementType": 1
+        },
+        {
+          "element": 7,
+          "position": 2,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": true,
+          "webName": "Calafiori",
+          "teamCode": 3,
+          "elementType": 2
+        },
+        {
+          "element": 376,
+          "position": 3,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Gomez",
+          "teamCode": 14,
+          "elementType": 2
+        },
+        {
+          "element": 443,
+          "position": 4,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Shaw",
+          "teamCode": 1,
+          "elementType": 2
+        },
+        {
+          "element": 487,
+          "position": 5,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Barnes",
+          "teamCode": 4,
+          "elementType": 3
+        },
+        {
+          "element": 82,
+          "position": 6,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Semenyo",
+          "teamCode": 91,
+          "elementType": 3
+        },
+        {
+          "element": 236,
+          "position": 7,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Neto",
+          "teamCode": 8,
+          "elementType": 3
+        },
+        {
+          "element": 16,
+          "position": 8,
+          "multiplier": 2,
+          "isCaptain": true,
+          "isViceCaptain": false,
+          "webName": "Saka",
+          "teamCode": 3,
+          "elementType": 3
+        },
+        {
+          "element": 249,
+          "position": 9,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "João Pedro",
+          "teamCode": 8,
+          "elementType": 4
+        },
+        {
+          "element": 714,
+          "position": 10,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Woltemade",
+          "teamCode": 4,
+          "elementType": 4
+        },
+        {
+          "element": 430,
+          "position": 11,
+          "multiplier": 1,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Haaland",
+          "teamCode": 43,
+          "elementType": 4
+        },
+        {
+          "element": 470,
+          "position": 12,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Dúbravka",
+          "teamCode": 90,
+          "elementType": 1
+        },
+        {
+          "element": 237,
+          "position": 13,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Enzo",
+          "teamCode": 8,
+          "elementType": 3
+        },
+        {
+          "element": 260,
+          "position": 14,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Guéhi",
+          "teamCode": 31,
+          "elementType": 2
+        },
+        {
+          "element": 41,
+          "position": 15,
+          "multiplier": 0,
+          "isCaptain": false,
+          "isViceCaptain": false,
+          "webName": "Pau",
+          "teamCode": 7,
           "elementType": 2
         }
       ]

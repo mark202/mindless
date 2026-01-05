@@ -33,14 +33,14 @@
       "teamName": "Check your Emails"
     },
     {
-      "entryId": 4223228,
-      "playerName": "Paul Cowley",
-      "teamName": "Lukakugate"
-    },
-    {
       "entryId": 7316166,
       "playerName": "Ricky Hopson",
       "teamName": "New Jersey United"
+    },
+    {
+      "entryId": 4223228,
+      "playerName": "Paul Cowley",
+      "teamName": "Lukakugate"
     },
     {
       "entryId": 6578949,
@@ -53,5 +53,5 @@
       "teamName": "Miso  Consadole"
     }
   ],
-  "fetchedAt": "2026-01-04T22:09:38.891Z"
+  "fetchedAt": "2026-01-05T01:13:07.949Z"
 }

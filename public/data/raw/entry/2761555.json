@@ -268,17 +268,17 @@
     },
     {
       "event": 20,
-      "points": 18,
-      "total_points": 413,
-      "rank": 3182622,
-      "rank_sort": 3182653,
-      "overall_rank": 12288907,
-      "percentile_rank": 30,
+      "points": 35,
+      "total_points": 430,
+      "rank": 8913011,
+      "rank_sort": 8913020,
+      "overall_rank": 12306558,
+      "percentile_rank": 75,
       "bank": 20,
       "value": 1028,
       "event_transfers": 11,
       "event_transfers_cost": 40,
-      "points_on_bench": 6
+      "points_on_bench": 9
     }
   ],
   "past": [

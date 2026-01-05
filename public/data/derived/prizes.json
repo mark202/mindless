@@ -932,6 +932,55 @@
       "reason": "GW19 rank 7"
     },
     {
+      "type": "weekly",
+      "gw": 20,
+      "entryId": 6108677,
+      "amount": 8,
+      "reason": "GW20 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 20,
+      "entryId": 7316166,
+      "amount": 6,
+      "reason": "GW20 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 20,
+      "entryId": 5905295,
+      "amount": 5,
+      "reason": "GW20 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 20,
+      "entryId": 5114501,
+      "amount": 4,
+      "reason": "GW20 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 20,
+      "entryId": 5623640,
+      "amount": 2.5,
+      "reason": "GW20 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 20,
+      "entryId": 4223228,
+      "amount": 1.5,
+      "reason": "GW20 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 20,
+      "entryId": 6578949,
+      "amount": 1,
+      "reason": "GW20 rank 7"
+    },
+    {
       "type": "monthly",
       "monthKey": "Aug",
       "entryId": 2761555,
@@ -1109,35 +1158,35 @@
     {
       "type": "monthly",
       "monthKey": "Jan",
-      "entryId": 2761555,
+      "entryId": 6108677,
       "amount": 25,
       "reason": "Jan rank 1"
     },
     {
       "type": "monthly",
       "monthKey": "Jan",
-      "entryId": 4223228,
+      "entryId": 7316166,
       "amount": 20,
       "reason": "Jan rank 2"
     },
     {
       "type": "monthly",
       "monthKey": "Jan",
-      "entryId": 5114501,
+      "entryId": 5905295,
       "amount": 12.5,
       "reason": "Jan rank 3"
     },
     {
       "type": "monthly",
       "monthKey": "Jan",
-      "entryId": 5623640,
+      "entryId": 5114501,
       "amount": 10,
       "reason": "Jan rank 4"
     },
     {
       "type": "monthly",
       "monthKey": "Jan",
-      "entryId": 5742237,
+      "entryId": 5623640,
       "amount": 7.5,
       "reason": "Jan rank 5"
     },
@@ -1351,15 +1400,15 @@
   ],
   "totalsByEntryId": {
     "0": 53,
-    "2761555": 266,
-    "4223228": 218,
-    "5114501": 140,
+    "2761555": 241,
+    "4223228": 199.5,
+    "5114501": 141.5,
     "5623640": 170.5,
-    "5742237": 86.5,
-    "5905295": 27.5,
-    "6108677": 202,
-    "6578949": 101,
+    "5742237": 79,
+    "5905295": 45,
+    "6108677": 235,
+    "6578949": 102,
     "6879756": 70,
-    "7316166": 150.5
+    "7316166": 176.5
   }
 }

@@ -1,6 +1,6 @@
 {
   "season": "2025-2026",
-  "lastUpdatedGw": 19,
+  "lastUpdatedGw": 20,
   "rows": [
     {
       "entryId": 6108677,
@@ -9,10 +9,10 @@
       "totalPoints": 1236,
       "rank": 1,
       "seasonPrize": 60,
-      "weeklyWinnings": 81.5,
-      "monthlyWinnings": 60.5,
+      "weeklyWinnings": 89.5,
+      "monthlyWinnings": 85.5,
       "cupWinnings": 0,
-      "totalWinnings": 202
+      "totalWinnings": 235
     },
     {
       "entryId": 7316166,
@@ -21,10 +21,10 @@
       "totalPoints": 1161,
       "rank": 2,
       "seasonPrize": 54,
-      "weeklyWinnings": 56.5,
-      "monthlyWinnings": 40,
+      "weeklyWinnings": 62.5,
+      "monthlyWinnings": 60,
       "cupWinnings": 0,
-      "totalWinnings": 150.5
+      "totalWinnings": 176.5
     },
     {
       "entryId": 2761555,
@@ -34,9 +34,9 @@
       "rank": 3,
       "seasonPrize": 48,
       "weeklyWinnings": 76.5,
-      "monthlyWinnings": 141.5,
+      "monthlyWinnings": 116.5,
       "cupWinnings": 0,
-      "totalWinnings": 266
+      "totalWinnings": 241
     },
     {
       "entryId": 4223228,
@@ -45,10 +45,10 @@
       "totalPoints": 1144,
       "rank": 4,
       "seasonPrize": 42,
-      "weeklyWinnings": 63.5,
-      "monthlyWinnings": 112.5,
+      "weeklyWinnings": 65,
+      "monthlyWinnings": 92.5,
       "cupWinnings": 0,
-      "totalWinnings": 218
+      "totalWinnings": 199.5
     },
     {
       "entryId": 5623640,
@@ -57,8 +57,8 @@
       "totalPoints": 1138,
       "rank": 5,
       "seasonPrize": 36,
-      "weeklyWinnings": 56.5,
-      "monthlyWinnings": 78,
+      "weeklyWinnings": 59,
+      "monthlyWinnings": 75.5,
       "cupWinnings": 0,
       "totalWinnings": 170.5
     },
@@ -69,10 +69,10 @@
       "totalPoints": 1125,
       "rank": 6,
       "seasonPrize": 30,
-      "weeklyWinnings": 47,
+      "weeklyWinnings": 48,
       "monthlyWinnings": 24,
       "cupWinnings": 0,
-      "totalWinnings": 101
+      "totalWinnings": 102
     },
     {
       "entryId": 5114501,
@@ -81,10 +81,10 @@
       "totalPoints": 1119,
       "rank": 7,
       "seasonPrize": 24,
-      "weeklyWinnings": 47.5,
-      "monthlyWinnings": 68.5,
+      "weeklyWinnings": 51.5,
+      "monthlyWinnings": 66,
       "cupWinnings": 0,
-      "totalWinnings": 140
+      "totalWinnings": 141.5
     },
     {
       "entryId": 6879756,
@@ -106,9 +106,9 @@
       "rank": 9,
       "seasonPrize": 12,
       "weeklyWinnings": 38.5,
-      "monthlyWinnings": 36,
+      "monthlyWinnings": 28.5,
       "cupWinnings": 0,
-      "totalWinnings": 86.5
+      "totalWinnings": 79
     },
     {
       "entryId": 5905295,
@@ -117,10 +117,10 @@
       "totalPoints": 952,
       "rank": 10,
       "seasonPrize": 6,
-      "weeklyWinnings": 21.5,
-      "monthlyWinnings": 0,
+      "weeklyWinnings": 26.5,
+      "monthlyWinnings": 12.5,
       "cupWinnings": 0,
-      "totalWinnings": 27.5
+      "totalWinnings": 45
     }
   ]
 }

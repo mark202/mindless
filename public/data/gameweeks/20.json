@@ -1,7 +1,7 @@
 {
   "gw": 20,
   "deadlineTime": "2026-01-03T11:00:00Z",
-  "isFinished": false,
+  "isFinished": true,
   "rows": [
     {
       "entryId": 6879756,

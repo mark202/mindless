@@ -4,18 +4,18 @@
   "isFinished": true,
   "rows": [
     {
-      "entryId": 6879756,
-      "playerName": "Chris Hajjar",
-      "teamName": "Leeds United States",
-      "points": 38,
-      "totalPoints": 1056
-    },
-    {
       "entryId": 5905295,
       "playerName": "Mark Hogben",
       "teamName": "The 202",
       "points": 57,
       "totalPoints": 952
+    },
+    {
+      "entryId": 6879756,
+      "playerName": "Chris Hajjar",
+      "teamName": "Leeds United States",
+      "points": 38,
+      "totalPoints": 1056
     },
     {
       "entryId": 5114501,

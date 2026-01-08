@@ -3,14 +3,14 @@
   "leagueId": 1237332,
   "managers": [
     {
-      "entryId": 6879756,
-      "playerName": "Chris Hajjar",
-      "teamName": "Leeds United States"
-    },
-    {
       "entryId": 5905295,
       "playerName": "Mark Hogben",
       "teamName": "The 202"
+    },
+    {
+      "entryId": 6879756,
+      "playerName": "Chris Hajjar",
+      "teamName": "Leeds United States"
     },
     {
       "entryId": 5114501,
@@ -53,5 +53,5 @@
       "teamName": "Miso  Consadole"
     }
   ],
-  "fetchedAt": "2026-01-07T22:37:05.505Z"
+  "fetchedAt": "2026-01-08T01:07:24.401Z"
 }

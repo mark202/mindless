@@ -72604,7 +72604,7 @@
     {
       "code": 2562104,
       "event": 21,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 210,
       "kickoff_time": "2026-01-06T20:00:00Z",
@@ -72940,7 +72940,7 @@
     {
       "code": 2562095,
       "event": 21,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 202,
       "kickoff_time": "2026-01-07T19:30:00Z",
@@ -73065,8 +73065,22 @@
         },
         {
           "identifier": "bonus",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 3,
+              "element": 584
+            },
+            {
+              "value": 2,
+              "element": 673
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 100
+            }
+          ]
         },
         {
           "identifier": "bps",
@@ -73302,7 +73316,7 @@
     {
       "code": 2562097,
       "event": 21,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 203,
       "kickoff_time": "2026-01-07T19:30:00Z",
@@ -73413,7 +73427,20 @@
         {
           "identifier": "bonus",
           "a": [],
-          "h": []
+          "h": [
+            {
+              "value": 3,
+              "element": 136
+            },
+            {
+              "value": 2,
+              "element": 106
+            },
+            {
+              "value": 1,
+              "element": 101
+            }
+          ]
         },
         {
           "identifier": "bps",
@@ -73637,7 +73664,7 @@
     {
       "code": 2562099,
       "event": 21,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 205,
       "kickoff_time": "2026-01-07T19:30:00Z",
@@ -73714,8 +73741,22 @@
         },
         {
           "identifier": "bonus",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 3,
+              "element": 37
+            },
+            {
+              "value": 1,
+              "element": 36
+            }
+          ],
+          "h": [
+            {
+              "value": 2,
+              "element": 723
+            }
+          ]
         },
         {
           "identifier": "bps",
@@ -73943,7 +73984,7 @@
     {
       "code": 2562100,
       "event": 21,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 206,
       "kickoff_time": "2026-01-07T19:30:00Z",
@@ -74054,8 +74095,22 @@
         },
         {
           "identifier": "bonus",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 3,
+              "element": 749
+            }
+          ],
+          "h": [
+            {
+              "value": 2,
+              "element": 304
+            },
+            {
+              "value": 1,
+              "element": 303
+            }
+          ]
         },
         {
           "identifier": "bps",
@@ -74283,7 +74338,7 @@
     {
       "code": 2562101,
       "event": 21,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 207,
       "kickoff_time": "2026-01-07T19:30:00Z",
@@ -74406,8 +74461,22 @@
         },
         {
           "identifier": "bonus",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 1,
+              "element": 250
+            }
+          ],
+          "h": [
+            {
+              "value": 3,
+              "element": 330
+            },
+            {
+              "value": 2,
+              "element": 329
+            }
+          ]
         },
         {
           "identifier": "bps",
@@ -74643,7 +74712,7 @@
     {
       "code": 2562102,
       "event": 21,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 208,
       "kickoff_time": "2026-01-07T19:30:00Z",
@@ -74757,8 +74826,26 @@
         },
         {
           "identifier": "bonus",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 2,
+              "element": 157
+            },
+            {
+              "value": 1,
+              "element": 163
+            }
+          ],
+          "h": [
+            {
+              "value": 3,
+              "element": 418
+            },
+            {
+              "value": 1,
+              "element": 430
+            }
+          ]
         },
         {
           "identifier": "bps",
@@ -75002,7 +75089,7 @@
     {
       "code": 2562098,
       "event": 21,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 204,
       "kickoff_time": "2026-01-07T20:15:00Z",
@@ -75103,7 +75190,20 @@
         },
         {
           "identifier": "bonus",
-          "a": [],
+          "a": [
+            {
+              "value": 3,
+              "element": 681
+            },
+            {
+              "value": 2,
+              "element": 449
+            },
+            {
+              "value": 1,
+              "element": 441
+            }
+          ],
           "h": []
         },
         {
@@ -75340,7 +75440,7 @@
     {
       "code": 2562103,
       "event": 21,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 209,
       "kickoff_time": "2026-01-07T20:15:00Z",
@@ -75478,8 +75578,22 @@
         },
         {
           "identifier": "bonus",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 2,
+              "element": 350
+            }
+          ],
+          "h": [
+            {
+              "value": 3,
+              "element": 487
+            },
+            {
+              "value": 1,
+              "element": 488
+            }
+          ]
         },
         {
           "identifier": "bps",
@@ -75493,7 +75607,7 @@
               "element": 356
             },
             {
-              "value": 22,
+              "value": 31,
               "element": 691
             },
             {
@@ -75503,10 +75617,6 @@
             {
               "value": 12,
               "element": 354
-            },
-            {
-              "value": 5,
-              "element": 343
             },
             {
               "value": 5,
@@ -75545,13 +75655,17 @@
               "element": 348
             },
             {
+              "value": -5,
+              "element": 343
+            },
+            {
               "value": -8,
               "element": 706
             }
           ],
           "h": [
             {
-              "value": 55,
+              "value": 56,
               "element": 487
             },
             {
@@ -75571,7 +75685,7 @@
               "element": 714
             },
             {
-              "value": 16,
+              "value": 17,
               "element": 475
             },
             {
@@ -75628,7 +75742,7 @@
               "element": 356
             },
             {
-              "value": 14,
+              "value": 13,
               "element": 343
             },
             {
@@ -75653,6 +75767,10 @@
             },
             {
               "value": 4,
+              "element": 691
+            },
+            {
+              "value": 4,
               "element": 698
             },
             {
@@ -75662,10 +75780,6 @@
             {
               "value": 3,
               "element": 365
-            },
-            {
-              "value": 3,
-              "element": 691
             },
             {
               "value": 2,
@@ -75682,7 +75796,7 @@
           ],
           "h": [
             {
-              "value": 20,
+              "value": 19,
               "element": 497
             },
             {
@@ -75715,15 +75829,15 @@
             },
             {
               "value": 3,
+              "element": 477
+            },
+            {
+              "value": 3,
               "element": 491
             },
             {
               "value": 2,
               "element": 52
-            },
-            {
-              "value": 2,
-              "element": 477
             },
             {
               "value": 2,
@@ -78994,5 +79108,5 @@
       "pulse_id": 125170
     }
   ],
-  "fetchedAt": "2026-01-07T22:37:01.718Z"
+  "fetchedAt": "2026-01-08T01:07:20.435Z"
 }

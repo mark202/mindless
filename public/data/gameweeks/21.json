@@ -14,15 +14,15 @@
       "entryId": 6879756,
       "playerName": "Chris Hajjar",
       "teamName": "Leeds United States",
-      "points": 33,
-      "totalPoints": 1089
+      "points": 36,
+      "totalPoints": 1092
     },
     {
       "entryId": 5114501,
       "playerName": "Jamie Marshall",
       "teamName": "Fortune and Glory",
-      "points": 48,
-      "totalPoints": 1167
+      "points": 54,
+      "totalPoints": 1173
     },
     {
       "entryId": 6108677,
@@ -35,8 +35,8 @@
       "entryId": 5623640,
       "playerName": "Andrew Cowling",
       "teamName": "Cowlers FC",
-      "points": 42,
-      "totalPoints": 1180
+      "points": 48,
+      "totalPoints": 1186
     },
     {
       "entryId": 5742237,
@@ -49,29 +49,29 @@
       "entryId": 7316166,
       "playerName": "Ricky Hopson",
       "teamName": "New Jersey United",
-      "points": 33,
-      "totalPoints": 1194
+      "points": 39,
+      "totalPoints": 1200
     },
     {
       "entryId": 4223228,
       "playerName": "Paul Cowley",
       "teamName": "Lukakugate",
-      "points": 39,
-      "totalPoints": 1183
+      "points": 42,
+      "totalPoints": 1186
     },
     {
       "entryId": 6578949,
       "playerName": "Marc Hopson",
       "teamName": "Peter Siddle’s Lunch",
-      "points": 51,
-      "totalPoints": 1176
+      "points": 60,
+      "totalPoints": 1185
     },
     {
       "entryId": 2761555,
       "playerName": "Dickster Bishop",
       "teamName": "Miso  Consadole",
-      "points": 52,
-      "totalPoints": 1206
+      "points": 55,
+      "totalPoints": 1209
     }
   ]
 }

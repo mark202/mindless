@@ -1731,42 +1731,42 @@
         "prize": 8
       },
       {
+        "entryId": 6578949,
+        "playerName": "Marc Hopson",
+        "teamName": "Peter Siddle’s Lunch",
+        "points": 60,
+        "rank": 2,
+        "prize": 6
+      },
+      {
         "entryId": 6108677,
         "playerName": "Jason Base",
         "teamName": "Isakly What We Need",
         "points": 59,
-        "rank": 2,
-        "prize": 6
+        "rank": 3,
+        "prize": 5
       },
       {
         "entryId": 2761555,
         "playerName": "Dickster Bishop",
         "teamName": "Miso  Consadole",
-        "points": 52,
-        "rank": 3,
-        "prize": 5
+        "points": 55,
+        "rank": 4,
+        "prize": 4
+      },
+      {
+        "entryId": 5114501,
+        "playerName": "Jamie Marshall",
+        "teamName": "Fortune and Glory",
+        "points": 54,
+        "rank": 5,
+        "prize": 2.5
       },
       {
         "entryId": 5742237,
         "playerName": "Lee Hopson",
         "teamName": "Check your Emails",
         "points": 52,
-        "rank": 4,
-        "prize": 4
-      },
-      {
-        "entryId": 6578949,
-        "playerName": "Marc Hopson",
-        "teamName": "Peter Siddle’s Lunch",
-        "points": 51,
-        "rank": 5,
-        "prize": 2.5
-      },
-      {
-        "entryId": 5114501,
-        "playerName": "Jamie Marshall",
-        "teamName": "Fortune and Glory",
-        "points": 48,
         "rank": 6,
         "prize": 1.5
       },
@@ -1774,7 +1774,7 @@
         "entryId": 5623640,
         "playerName": "Andrew Cowling",
         "teamName": "Cowlers FC",
-        "points": 42,
+        "points": 48,
         "rank": 7,
         "prize": 1
       },
@@ -1782,23 +1782,23 @@
         "entryId": 4223228,
         "playerName": "Paul Cowley",
         "teamName": "Lukakugate",
-        "points": 39,
+        "points": 42,
         "rank": 8,
-        "prize": 0
-      },
-      {
-        "entryId": 6879756,
-        "playerName": "Chris Hajjar",
-        "teamName": "Leeds United States",
-        "points": 33,
-        "rank": 9,
         "prize": 0
       },
       {
         "entryId": 7316166,
         "playerName": "Ricky Hopson",
         "teamName": "New Jersey United",
-        "points": 33,
+        "points": 39,
+        "rank": 9,
+        "prize": 0
+      },
+      {
+        "entryId": 6879756,
+        "playerName": "Chris Hajjar",
+        "teamName": "Leeds United States",
+        "points": 36,
         "rank": 10,
         "prize": 0
       }

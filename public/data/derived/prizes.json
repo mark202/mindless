@@ -981,6 +981,55 @@
       "reason": "GW20 rank 7"
     },
     {
+      "type": "weekly",
+      "gw": 21,
+      "entryId": 5905295,
+      "amount": 8,
+      "reason": "GW21 rank 1"
+    },
+    {
+      "type": "weekly",
+      "gw": 21,
+      "entryId": 6578949,
+      "amount": 6,
+      "reason": "GW21 rank 2"
+    },
+    {
+      "type": "weekly",
+      "gw": 21,
+      "entryId": 6108677,
+      "amount": 5,
+      "reason": "GW21 rank 3"
+    },
+    {
+      "type": "weekly",
+      "gw": 21,
+      "entryId": 2761555,
+      "amount": 4,
+      "reason": "GW21 rank 4"
+    },
+    {
+      "type": "weekly",
+      "gw": 21,
+      "entryId": 5114501,
+      "amount": 2.5,
+      "reason": "GW21 rank 5"
+    },
+    {
+      "type": "weekly",
+      "gw": 21,
+      "entryId": 5742237,
+      "amount": 1.5,
+      "reason": "GW21 rank 6"
+    },
+    {
+      "type": "weekly",
+      "gw": 21,
+      "entryId": 5623640,
+      "amount": 1,
+      "reason": "GW21 rank 7"
+    },
+    {
       "type": "monthly",
       "monthKey": "Aug",
       "entryId": 2761555,
@@ -1165,14 +1214,14 @@
     {
       "type": "monthly",
       "monthKey": "Jan",
-      "entryId": 7316166,
+      "entryId": 5905295,
       "amount": 20,
       "reason": "Jan rank 2"
     },
     {
       "type": "monthly",
       "monthKey": "Jan",
-      "entryId": 5905295,
+      "entryId": 6578949,
       "amount": 12.5,
       "reason": "Jan rank 3"
     },
@@ -1186,7 +1235,7 @@
     {
       "type": "monthly",
       "monthKey": "Jan",
-      "entryId": 5623640,
+      "entryId": 7316166,
       "amount": 7.5,
       "reason": "Jan rank 5"
     },
@@ -1400,15 +1449,15 @@
   ],
   "totalsByEntryId": {
     "0": 53,
-    "2761555": 247,
+    "2761555": 251,
     "4223228": 193.5,
-    "5114501": 141.5,
-    "5623640": 176.5,
-    "5742237": 79,
-    "5905295": 45,
-    "6108677": 235,
-    "6578949": 102,
+    "5114501": 144,
+    "5623640": 170,
+    "5742237": 80.5,
+    "5905295": 60.5,
+    "6108677": 240,
+    "6578949": 120.5,
     "6879756": 70,
-    "7316166": 170.5
+    "7316166": 158
   }
 }

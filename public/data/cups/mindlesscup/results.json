@@ -1,0 +1,407 @@
+{
+  "cupKey": "MindlessCup",
+  "updatedAt": "2026-01-14T04:20:59.351Z",
+  "rounds": [
+    {
+      "round": 1,
+      "stage": "group",
+      "gw": 22,
+      "matches": [
+        {
+          "matchId": "GR1-A-1",
+          "stage": "group",
+          "round": 1,
+          "gw": 22,
+          "homeEntryId": 5905295,
+          "awayEntryId": 5623640,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        },
+        {
+          "matchId": "GR1-A-2",
+          "stage": "group",
+          "round": 1,
+          "gw": 22,
+          "homeEntryId": 7316166,
+          "awayEntryId": 6578949,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        },
+        {
+          "matchId": "GR1-B-1",
+          "stage": "group",
+          "round": 1,
+          "gw": 22,
+          "homeEntryId": 4223228,
+          "awayEntryId": 6879756,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        },
+        {
+          "matchId": "GR1-B-2",
+          "stage": "group",
+          "round": 1,
+          "gw": 22,
+          "homeEntryId": 5742237,
+          "awayEntryId": 5114501,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "stage": "group",
+      "gw": 23,
+      "matches": [
+        {
+          "matchId": "GR2-A-1",
+          "stage": "group",
+          "round": 2,
+          "gw": 23,
+          "homeEntryId": 5905295,
+          "awayEntryId": 7316166,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        },
+        {
+          "matchId": "GR2-A-2",
+          "stage": "group",
+          "round": 2,
+          "gw": 23,
+          "homeEntryId": 5623640,
+          "awayEntryId": 2761555,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        },
+        {
+          "matchId": "GR2-B-1",
+          "stage": "group",
+          "round": 2,
+          "gw": 23,
+          "homeEntryId": 4223228,
+          "awayEntryId": 5742237,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        },
+        {
+          "matchId": "GR2-B-2",
+          "stage": "group",
+          "round": 2,
+          "gw": 23,
+          "homeEntryId": 6879756,
+          "awayEntryId": 6108677,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "stage": "group",
+      "gw": 24,
+      "matches": [
+        {
+          "matchId": "GR3-A-1",
+          "stage": "group",
+          "round": 3,
+          "gw": 24,
+          "homeEntryId": 5905295,
+          "awayEntryId": 6578949,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        },
+        {
+          "matchId": "GR3-A-2",
+          "stage": "group",
+          "round": 3,
+          "gw": 24,
+          "homeEntryId": 2761555,
+          "awayEntryId": 7316166,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        },
+        {
+          "matchId": "GR3-B-1",
+          "stage": "group",
+          "round": 3,
+          "gw": 24,
+          "homeEntryId": 4223228,
+          "awayEntryId": 5114501,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        },
+        {
+          "matchId": "GR3-B-2",
+          "stage": "group",
+          "round": 3,
+          "gw": 24,
+          "homeEntryId": 6108677,
+          "awayEntryId": 5742237,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "stage": "group",
+      "gw": 25,
+      "matches": [
+        {
+          "matchId": "GR4-A-1",
+          "stage": "group",
+          "round": 4,
+          "gw": 25,
+          "homeEntryId": 5905295,
+          "awayEntryId": 2761555,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        },
+        {
+          "matchId": "GR4-A-2",
+          "stage": "group",
+          "round": 4,
+          "gw": 25,
+          "homeEntryId": 5623640,
+          "awayEntryId": 6578949,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        },
+        {
+          "matchId": "GR4-B-1",
+          "stage": "group",
+          "round": 4,
+          "gw": 25,
+          "homeEntryId": 4223228,
+          "awayEntryId": 6108677,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        },
+        {
+          "matchId": "GR4-B-2",
+          "stage": "group",
+          "round": 4,
+          "gw": 25,
+          "homeEntryId": 6879756,
+          "awayEntryId": 5114501,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "stage": "semi",
+      "gw": 26,
+      "matches": [
+        {
+          "matchId": "SF1",
+          "stage": "semi",
+          "round": 5,
+          "gw": 26,
+          "homeEntryId": null,
+          "awayEntryId": null,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        },
+        {
+          "matchId": "SF2",
+          "stage": "semi",
+          "round": 5,
+          "gw": 26,
+          "homeEntryId": null,
+          "awayEntryId": null,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "stage": "final",
+      "gw": 27,
+      "matches": [
+        {
+          "matchId": "F1",
+          "stage": "final",
+          "round": 6,
+          "gw": 27,
+          "homeEntryId": null,
+          "awayEntryId": null,
+          "homePoints": null,
+          "awayPoints": null,
+          "winnerEntryId": null,
+          "decidedBy": null
+        }
+      ]
+    }
+  ],
+  "groupTables": {
+    "A": [
+      {
+        "entryId": 6578949,
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "points": 0
+      },
+      {
+        "entryId": 2761555,
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "points": 0
+      },
+      {
+        "entryId": 5623640,
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "points": 0
+      },
+      {
+        "entryId": 7316166,
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "points": 0
+      },
+      {
+        "entryId": 5905295,
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "points": 0
+      }
+    ],
+    "B": [
+      {
+        "entryId": 5742237,
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "points": 0
+      },
+      {
+        "entryId": 6879756,
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "points": 0
+      },
+      {
+        "entryId": 4223228,
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "points": 0
+      },
+      {
+        "entryId": 6108677,
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "points": 0
+      },
+      {
+        "entryId": 5114501,
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "points": 0
+      }
+    ]
+  },
+  "finals": {
+    "semi1": {
+      "matchId": "SF1",
+      "winnerEntryId": null
+    },
+    "semi2": {
+      "matchId": "SF2",
+      "winnerEntryId": null
+    },
+    "final": {
+      "matchId": "F1",
+      "winnerEntryId": null
+    }
+  },
+  "placements": {}
+}

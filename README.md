@@ -8,6 +8,7 @@ Automated pipeline + static Next.js site for the Mindless fantasy league (ID 123
 - `npm run build` / `npm start` – production build + serve
 - `npm run ingest` – run `scripts/fetch-fpl.ts` then `scripts/derive.ts` to refresh data
 - `npm run summary` – generate `public/data/derived/weekly-email-{gw}.html` from the latest finished GW
+- `npm run verify-cup` – validate seeded cup draw + fixtures against config
 
 ## Data flow
 
@@ -21,6 +22,7 @@ Automated pipeline + static Next.js site for the Mindless fantasy league (ID 123
    - `public/data/derived/prizes.json` – unified ledger + totals
    - `public/data/derived/latest.json` – last finished/current GW and generated timestamp
 3. The Next.js app reads the JSON files at build/runtime and renders Leaderboard, Gameweek, Month, Prize, Rules, and Manager detail views.
+4. Cup data (draw + results) is written under `public/data/cups/{cupKey}/` for the Cup pages.
 
 ## Configuration
 

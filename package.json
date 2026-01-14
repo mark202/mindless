@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "ingest": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpileOnly scripts/fetch-fpl.ts && TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpileOnly scripts/derive.ts",
-    "summary": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpileOnly scripts/weekly-summary.ts"
+    "summary": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpileOnly scripts/weekly-summary.ts",
+    "verify-cup": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' ts-node --transpileOnly scripts/verify-cup.ts"
   },
   "dependencies": {
     "next": "^14.2.0",

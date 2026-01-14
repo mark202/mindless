@@ -12,7 +12,9 @@ import {
   WeeklyResult,
   PrizeLedgerItem,
   WeeklyNarrative,
-  FixturesFile
+  FixturesFile,
+  CupDraw,
+  CupResults
 } from './types';
 
 const dataRoot = path.join(process.cwd(), 'public', 'data');
@@ -107,4 +109,16 @@ export async function getLastUpdated(): Promise<string | null> {
   } catch (error) {
     return null;
   }
+}
+
+function cupSlug(cupKey: string): string {
+  return cupKey.toLowerCase();
+}
+
+export async function loadCupDraw(cupKey: string): Promise<CupDraw | null> {
+  return readJson<CupDraw | null>(path.join('cups', cupSlug(cupKey), 'draw.json'), null);
+}
+
+export async function loadCupResults(cupKey: string): Promise<CupResults | null> {
+  return readJson<CupResults | null>(path.join('cups', cupSlug(cupKey), 'results.json'), null);
 }

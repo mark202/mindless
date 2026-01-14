@@ -19,6 +19,20 @@
     { "key": "May", "gws": [35, 36, 37, 38], "payouts": { "1": 20, "2": 16, "3": 10, "4": 8, "5": 6 } }
   ],
   "cups": [
+    {
+      "key": "MindlessCup",
+      "name": "Mindless Cup",
+      "mode": "derived",
+      "format": "groups_then_knockout",
+      "groupCount": 2,
+      "advancePerGroup": 2,
+      "startGw": 22,
+      "useGwPoints": true,
+      "groupPoints": { "win": 3, "draw": 1, "loss": 0 },
+      "includeThirdPlacePlayoff": false,
+      "randomSeed": "MindlessCup-2025-2026-GW22",
+      "totalPrize": 0
+    },
     { "key": "Cup2", "name": "Cup Competition No. 2", "totalPrize": 53, "mode": "manual" }
   ]
 }

@@ -12,7 +12,13 @@ import type {
   WeeklyResult,
   ManagersFile,
   MindlessConfig,
-  CupResults
+  CupResults,
+  CupDraw,
+  CupConfigDerived,
+  CupGroupKey,
+  CupMatchResult,
+  CupGroupTableRow,
+  CupManualResults
 } from '../lib/types';
 import { ensureDir, getPrizeForRank, loadConfig, rankRows, writeJson } from './utils';
 
@@ -28,6 +34,236 @@ async function loadEntryHistory(entryId: number): Promise<EntryHistory> {
 
 function findEvent(events: Bootstrap['events'], gw: number) {
   return events.find((event) => event.id === gw);
+}
+
+function hashStringToSeed(value: string): number {
+  let hash = 0;
+  for (let i = 0; i < value.length; i += 1) {
+    hash = (hash << 5) - hash + value.charCodeAt(i);
+    hash |= 0;
+  }
+  return hash >>> 0;
+}
+
+function mulberry32(seed: number) {
+  let t = seed;
+  return () => {
+    t += 0x6d2b79f5;
+    let result = Math.imul(t ^ (t >>> 15), t | 1);
+    result ^= result + Math.imul(result ^ (result >>> 7), result | 61);
+    return ((result ^ (result >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function seededShuffle<T>(items: T[], seed: string): T[] {
+  const rng = mulberry32(hashStringToSeed(seed));
+  const array = [...items];
+  for (let i = array.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(rng() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+function seededCoinFlip(seed: string): boolean {
+  const rng = mulberry32(hashStringToSeed(seed));
+  return rng() >= 0.5;
+}
+
+function buildGroupFixtures(entries: number[], group: CupGroupKey): Array<{ round: number; matches: CupDraw['fixtures'][number]['matches'] }> {
+  const [t1, t2, t3, t4, t5] = entries;
+  return [
+    {
+      round: 1,
+      matches: [
+        { matchId: `GR1-${group}-1`, homeEntryId: t1, awayEntryId: t2, group },
+        { matchId: `GR1-${group}-2`, homeEntryId: t3, awayEntryId: t4, group }
+      ]
+    },
+    {
+      round: 2,
+      matches: [
+        { matchId: `GR2-${group}-1`, homeEntryId: t1, awayEntryId: t3, group },
+        { matchId: `GR2-${group}-2`, homeEntryId: t2, awayEntryId: t5, group }
+      ]
+    },
+    {
+      round: 3,
+      matches: [
+        { matchId: `GR3-${group}-1`, homeEntryId: t1, awayEntryId: t4, group },
+        { matchId: `GR3-${group}-2`, homeEntryId: t5, awayEntryId: t3, group }
+      ]
+    },
+    {
+      round: 4,
+      matches: [
+        { matchId: `GR4-${group}-1`, homeEntryId: t1, awayEntryId: t5, group },
+        { matchId: `GR4-${group}-2`, homeEntryId: t2, awayEntryId: t4, group }
+      ]
+    }
+  ];
+}
+
+function resolveMatchResult(
+  matchId: string,
+  stage: CupMatchResult['stage'],
+  round: number,
+  gw: number,
+  homeEntryId: number | null,
+  awayEntryId: number | null,
+  gameweekPoints: Map<number, Map<number, { points: number; totalPoints: number }>>,
+  randomSeed: string
+): CupMatchResult {
+  if (homeEntryId === null || awayEntryId === null) {
+    return {
+      matchId,
+      stage,
+      round,
+      gw,
+      homeEntryId,
+      awayEntryId,
+      homePoints: null,
+      awayPoints: null,
+      winnerEntryId: null,
+      decidedBy: null
+    };
+  }
+
+  const homeData = gameweekPoints.get(gw)?.get(homeEntryId) ?? { points: 0, totalPoints: 0 };
+  const awayData = gameweekPoints.get(gw)?.get(awayEntryId) ?? { points: 0, totalPoints: 0 };
+  const homePoints = homeData.points;
+  const awayPoints = awayData.points;
+
+  if (homePoints !== awayPoints) {
+    return {
+      matchId,
+      stage,
+      round,
+      gw,
+      homeEntryId,
+      awayEntryId,
+      homePoints,
+      awayPoints,
+      winnerEntryId: homePoints > awayPoints ? homeEntryId : awayEntryId,
+      decidedBy: 'gw_points'
+    };
+  }
+
+  if (homeData.totalPoints !== awayData.totalPoints) {
+    return {
+      matchId,
+      stage,
+      round,
+      gw,
+      homeEntryId,
+      awayEntryId,
+      homePoints,
+      awayPoints,
+      winnerEntryId: homeData.totalPoints > awayData.totalPoints ? homeEntryId : awayEntryId,
+      decidedBy: 'season_points'
+    };
+  }
+
+  const homeWins = seededCoinFlip(`${randomSeed}:${matchId}`);
+  return {
+    matchId,
+    stage,
+    round,
+    gw,
+    homeEntryId,
+    awayEntryId,
+    homePoints,
+    awayPoints,
+    winnerEntryId: homeWins ? homeEntryId : awayEntryId,
+    decidedBy: 'random'
+  };
+}
+
+function initGroupTableRow(entryId: number): CupGroupTableRow {
+  return { entryId, played: 0, won: 0, drawn: 0, lost: 0, gf: 0, ga: 0, gd: 0, points: 0 };
+}
+
+function getGroupTable(
+  entries: number[],
+  matches: CupMatchResult[],
+  groupPoints: CupConfigDerived['groupPoints'],
+  lastFinishedGroupGw: number | null,
+  gameweekPoints: Map<number, Map<number, { points: number; totalPoints: number }>>,
+  randomSeed: string,
+  groupKey: CupGroupKey
+): CupGroupTableRow[] {
+  const table = new Map<number, CupGroupTableRow>();
+  entries.forEach((entryId) => table.set(entryId, initGroupTableRow(entryId)));
+
+  matches.forEach((match) => {
+    if (match.homeEntryId === null || match.awayEntryId === null) return;
+    if (match.homePoints === null || match.awayPoints === null) return;
+    const home = table.get(match.homeEntryId);
+    const away = table.get(match.awayEntryId);
+    if (!home || !away) return;
+
+    home.played += 1;
+    away.played += 1;
+    home.gf += match.homePoints;
+    home.ga += match.awayPoints;
+    away.gf += match.awayPoints;
+    away.ga += match.homePoints;
+
+    if (match.winnerEntryId === null) {
+      home.drawn += 1;
+      away.drawn += 1;
+      home.points += groupPoints.draw;
+      away.points += groupPoints.draw;
+    } else if (match.winnerEntryId === match.homeEntryId) {
+      home.won += 1;
+      away.lost += 1;
+      home.points += groupPoints.win;
+      away.points += groupPoints.loss;
+    } else {
+      away.won += 1;
+      home.lost += 1;
+      away.points += groupPoints.win;
+      home.points += groupPoints.loss;
+    }
+  });
+
+  table.forEach((row) => {
+    row.gd = row.gf - row.ga;
+  });
+
+  const lastGw = lastFinishedGroupGw;
+  const seasonPointsByEntry = new Map<number, number>();
+  if (lastGw !== null) {
+    entries.forEach((entryId) => {
+      seasonPointsByEntry.set(entryId, gameweekPoints.get(lastGw)?.get(entryId)?.totalPoints ?? 0);
+    });
+  }
+
+  const headToHeadMap = new Map<string, number>();
+  matches.forEach((match) => {
+    if (match.winnerEntryId === null) return;
+    if (match.homeEntryId === null || match.awayEntryId === null) return;
+    headToHeadMap.set(`${match.homeEntryId}-${match.awayEntryId}`, match.winnerEntryId);
+    headToHeadMap.set(`${match.awayEntryId}-${match.homeEntryId}`, match.winnerEntryId);
+  });
+
+  const seededRank = (entryId: number) => {
+    const rng = mulberry32(hashStringToSeed(`${randomSeed}:${groupKey}:${entryId}`));
+    return rng();
+  };
+
+  return Array.from(table.values()).sort((a, b) => {
+    if (b.points !== a.points) return b.points - a.points;
+    if (b.won !== a.won) return b.won - a.won;
+    if (b.gf !== a.gf) return b.gf - a.gf;
+    const headWinner = headToHeadMap.get(`${a.entryId}-${b.entryId}`);
+    if (headWinner === a.entryId) return -1;
+    if (headWinner === b.entryId) return 1;
+    const seasonA = seasonPointsByEntry.get(a.entryId) ?? 0;
+    const seasonB = seasonPointsByEntry.get(b.entryId) ?? 0;
+    if (seasonB !== seasonA) return seasonB - seasonA;
+    return seededRank(b.entryId) - seededRank(a.entryId);
+  });
 }
 
 async function loadTeams(gw: number): Promise<GameweekTeamsFile | null> {
@@ -234,14 +470,343 @@ async function main() {
       })
     );
 
-  let cupResults: CupResults = {};
-  try {
-    cupResults = await readJson<CupResults>(path.join('config', 'cups.results.json'));
-  } catch (error) {
-    cupResults = {};
+  const derivedCups = config.cups.filter(
+    (cup): cup is CupConfigDerived => cup.mode === 'derived' && cup.format === 'groups_then_knockout'
+  );
+
+  for (const cup of derivedCups) {
+    const cupSlug = cup.key.toLowerCase();
+    const cupDir = path.join('public', 'data', 'cups', cupSlug);
+    await ensureDir(path.join(process.cwd(), cupDir));
+
+    let draw: CupDraw | null = null;
+    try {
+      draw = await readJson<CupDraw>(path.join(cupDir, 'draw.json'));
+      if (draw.randomSeed !== cup.randomSeed || draw.startGw !== cup.startGw || draw.season !== config.season) {
+        draw = null;
+      }
+    } catch (error) {
+      draw = null;
+    }
+
+    if (!draw) {
+      const entryIds = managers.managers.map((manager) => manager.entryId);
+      const shuffled = seededShuffle(entryIds, cup.randomSeed);
+      const groupSize = Math.floor(shuffled.length / cup.groupCount);
+      if (groupSize < 5) {
+        console.warn(`Not enough managers for ${cup.key} cup draw.`);
+        continue;
+      }
+      const needed = cup.groupCount * groupSize;
+      const selected = shuffled.slice(0, needed);
+      const groups = {
+        A: selected.slice(0, 5),
+        B: selected.slice(5, 10)
+      };
+
+      const groupFixturesA = buildGroupFixtures(groups.A, 'A');
+      const groupFixturesB = buildGroupFixtures(groups.B, 'B');
+
+      const fixtures: CupDraw['fixtures'] = [];
+      for (let roundIndex = 1; roundIndex <= 4; roundIndex += 1) {
+        const gw = cup.startGw + (roundIndex - 1);
+        fixtures.push({
+          round: roundIndex,
+          stage: 'group',
+          gw,
+          matches: [
+            ...groupFixturesA.find((round) => round.round === roundIndex)?.matches ?? [],
+            ...groupFixturesB.find((round) => round.round === roundIndex)?.matches ?? []
+          ]
+        });
+      }
+
+      fixtures.push({
+        round: 5,
+        stage: 'semi',
+        gw: cup.startGw + 4,
+        matches: [
+          { matchId: 'SF1', homeEntryId: null, awayEntryId: null },
+          { matchId: 'SF2', homeEntryId: null, awayEntryId: null }
+        ]
+      });
+      fixtures.push({
+        round: 6,
+        stage: 'final',
+        gw: cup.startGw + 5,
+        matches: [{ matchId: 'F1', homeEntryId: null, awayEntryId: null }]
+      });
+
+      if (cup.includeThirdPlacePlayoff) {
+        fixtures.push({
+          round: 7,
+          stage: 'third',
+          gw: cup.startGw + 5,
+          matches: [{ matchId: 'TP1', homeEntryId: null, awayEntryId: null }]
+        });
+      }
+
+      draw = {
+        cupKey: cup.key,
+        season: config.season,
+        generatedAt: new Date().toISOString(),
+        randomSeed: cup.randomSeed,
+        startGw: cup.startGw,
+        groups,
+        fixtures
+      };
+
+      await writeJson(path.join(cupDir, 'draw.json'), draw);
+    }
+
+    if (!draw) continue;
+
+    const groupRounds = draw.fixtures.filter((fixture) => fixture.stage === 'group');
+    const groupGws = groupRounds.map((round) => round.gw);
+    const finishedGroupGws = groupGws.filter((gw) => finishedSet.has(gw));
+    const lastFinishedGroupGw = finishedGroupGws.length > 0 ? Math.max(...finishedGroupGws) : null;
+    const groupStageComplete = groupGws.every((gw) => finishedSet.has(gw));
+
+    const rounds: CupResults['rounds'] = groupRounds.map((round) => {
+      const isFinished = finishedSet.has(round.gw);
+      const matches = round.matches.map((match) =>
+        isFinished
+          ? resolveMatchResult(
+              match.matchId,
+              'group',
+              round.round,
+              round.gw,
+              match.homeEntryId,
+              match.awayEntryId,
+              gameweekPoints,
+              cup.randomSeed
+            )
+          : {
+              matchId: match.matchId,
+              stage: 'group',
+              round: round.round,
+              gw: round.gw,
+              homeEntryId: match.homeEntryId,
+              awayEntryId: match.awayEntryId,
+              homePoints: null,
+              awayPoints: null,
+              winnerEntryId: null,
+              decidedBy: null
+            }
+      );
+      return { round: round.round, stage: 'group', gw: round.gw, matches };
+    });
+
+    const groupMatches = rounds.flatMap((round) => round.matches);
+    const groupTables = {
+      A: getGroupTable(draw.groups.A, groupMatches.filter((match) => match.stage === 'group' && match.matchId.includes('-A-')), cup.groupPoints, lastFinishedGroupGw, gameweekPoints, cup.randomSeed, 'A'),
+      B: getGroupTable(draw.groups.B, groupMatches.filter((match) => match.stage === 'group' && match.matchId.includes('-B-')), cup.groupPoints, lastFinishedGroupGw, gameweekPoints, cup.randomSeed, 'B')
+    };
+
+    const semiFixture = draw.fixtures.find((fixture) => fixture.stage === 'semi');
+    const finalFixture = draw.fixtures.find((fixture) => fixture.stage === 'final');
+    const thirdFixture = draw.fixtures.find((fixture) => fixture.stage === 'third');
+
+    const semiRound = semiFixture
+      ? {
+          round: semiFixture.round,
+          stage: 'semi' as const,
+          gw: semiFixture.gw,
+          matches: semiFixture.matches.map((match, index) => {
+            const homeEntryId =
+              groupStageComplete && index === 0 ? groupTables.A[0]?.entryId ?? null : groupStageComplete ? groupTables.B[0]?.entryId ?? null : null;
+            const awayEntryId =
+              groupStageComplete && index === 0 ? groupTables.B[1]?.entryId ?? null : groupStageComplete ? groupTables.A[1]?.entryId ?? null : null;
+            const isFinished = finishedSet.has(semiFixture.gw);
+            return isFinished
+              ? resolveMatchResult(
+                  match.matchId,
+                  'semi',
+                  semiFixture.round,
+                  semiFixture.gw,
+                  homeEntryId,
+                  awayEntryId,
+                  gameweekPoints,
+                  cup.randomSeed
+                )
+              : {
+                  matchId: match.matchId,
+                  stage: 'semi',
+                  round: semiFixture.round,
+                  gw: semiFixture.gw,
+                  homeEntryId,
+                  awayEntryId,
+                  homePoints: null,
+                  awayPoints: null,
+                  winnerEntryId: null,
+                  decidedBy: null
+                };
+          })
+        }
+      : null;
+
+    if (semiRound) {
+      rounds.push(semiRound);
+    }
+
+    const semiWinners = semiRound?.matches.map((match) => match.winnerEntryId ?? null) ?? [];
+    const semiLosers = semiRound?.matches.map((match) => {
+      if (match.homeEntryId === null || match.awayEntryId === null || match.winnerEntryId === null) return null;
+      return match.winnerEntryId === match.homeEntryId ? match.awayEntryId : match.homeEntryId;
+    }) ?? [];
+
+    const finalRound = finalFixture
+      ? {
+          round: finalFixture.round,
+          stage: 'final' as const,
+          gw: finalFixture.gw,
+          matches: finalFixture.matches.map((match) => {
+            const homeEntryId = semiWinners[0] ?? null;
+            const awayEntryId = semiWinners[1] ?? null;
+            const isFinished = finishedSet.has(finalFixture.gw);
+            return isFinished
+              ? resolveMatchResult(
+                  match.matchId,
+                  'final',
+                  finalFixture.round,
+                  finalFixture.gw,
+                  homeEntryId,
+                  awayEntryId,
+                  gameweekPoints,
+                  cup.randomSeed
+                )
+              : {
+                  matchId: match.matchId,
+                  stage: 'final',
+                  round: finalFixture.round,
+                  gw: finalFixture.gw,
+                  homeEntryId,
+                  awayEntryId,
+                  homePoints: null,
+                  awayPoints: null,
+                  winnerEntryId: null,
+                  decidedBy: null
+                };
+          })
+        }
+      : null;
+
+    if (finalRound) {
+      rounds.push(finalRound);
+    }
+
+    const thirdRound = thirdFixture
+      ? {
+          round: thirdFixture.round,
+          stage: 'third' as const,
+          gw: thirdFixture.gw,
+          matches: thirdFixture.matches.map((match) => {
+            const homeEntryId = semiLosers[0] ?? null;
+            const awayEntryId = semiLosers[1] ?? null;
+            const isFinished = finishedSet.has(thirdFixture.gw);
+            return isFinished
+              ? resolveMatchResult(
+                  match.matchId,
+                  'third',
+                  thirdFixture.round,
+                  thirdFixture.gw,
+                  homeEntryId,
+                  awayEntryId,
+                  gameweekPoints,
+                  cup.randomSeed
+                )
+              : {
+                  matchId: match.matchId,
+                  stage: 'third',
+                  round: thirdFixture.round,
+                  gw: thirdFixture.gw,
+                  homeEntryId,
+                  awayEntryId,
+                  homePoints: null,
+                  awayPoints: null,
+                  winnerEntryId: null,
+                  decidedBy: null
+                };
+          })
+        }
+      : null;
+
+    if (thirdRound) {
+      rounds.push(thirdRound);
+    }
+
+    const finalMatch = finalRound?.matches[0];
+    const championEntryId = finalMatch?.winnerEntryId ?? undefined;
+    const runnerUpEntryId =
+      finalMatch?.homeEntryId && finalMatch?.awayEntryId && finalMatch.winnerEntryId
+        ? finalMatch.winnerEntryId === finalMatch.homeEntryId
+          ? finalMatch.awayEntryId
+          : finalMatch.homeEntryId
+        : undefined;
+    const thirdEntryId = thirdRound?.matches[0]?.winnerEntryId ?? undefined;
+
+    const cupResults: CupResults = {
+      cupKey: cup.key,
+      updatedAt: new Date().toISOString(),
+      rounds,
+      groupTables,
+      finals: {
+        semi1: semiRound?.matches[0] ? { matchId: semiRound.matches[0].matchId, winnerEntryId: semiRound.matches[0].winnerEntryId } : undefined,
+        semi2: semiRound?.matches[1] ? { matchId: semiRound.matches[1].matchId, winnerEntryId: semiRound.matches[1].winnerEntryId } : undefined,
+        final: finalMatch ? { matchId: finalMatch.matchId, winnerEntryId: finalMatch.winnerEntryId } : undefined,
+        third: thirdRound?.matches[0] ? { matchId: thirdRound.matches[0].matchId, winnerEntryId: thirdRound.matches[0].winnerEntryId } : undefined
+      },
+      placements: {
+        championEntryId,
+        runnerUpEntryId,
+        thirdEntryId
+      }
+    };
+
+    await writeJson(path.join(cupDir, 'results.json'), cupResults);
+
+    const payoutChampion = cup.cupPayouts?.champion ?? cup.totalPrize ?? 0;
+    if (championEntryId && payoutChampion > 0) {
+      prizeLedger.push({
+        type: 'cup',
+        cupKey: cup.key,
+        entryId: championEntryId,
+        amount: payoutChampion,
+        reason: `${cup.name} champion`
+      });
+    }
+
+    const payoutRunnerUp = cup.cupPayouts?.runnerUp ?? 0;
+    if (runnerUpEntryId && payoutRunnerUp > 0) {
+      prizeLedger.push({
+        type: 'cup',
+        cupKey: cup.key,
+        entryId: runnerUpEntryId,
+        amount: payoutRunnerUp,
+        reason: `${cup.name} runner-up`
+      });
+    }
+
+    const payoutThird = cup.cupPayouts?.third ?? 0;
+    if (thirdEntryId && payoutThird > 0) {
+      prizeLedger.push({
+        type: 'cup',
+        cupKey: cup.key,
+        entryId: thirdEntryId,
+        amount: payoutThird,
+        reason: `${cup.name} third place`
+      });
+    }
   }
 
-  Object.entries(cupResults).forEach(([cupKey, result]) => {
+  let manualCupResults: CupManualResults = {};
+  try {
+    manualCupResults = await readJson<CupManualResults>(path.join('config', 'cups.results.json'));
+  } catch (error) {
+    manualCupResults = {};
+  }
+
+  Object.entries(manualCupResults).forEach(([cupKey, result]) => {
     result.winners.forEach((winner) => {
       prizeLedger.push({
         type: 'cup',

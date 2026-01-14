@@ -6,12 +6,30 @@ export type MonthDefinition = {
   payouts: Record<string, number>;
 };
 
-export type CupConfig = {
+export type CupConfigManual = {
   key: string;
   name: string;
   totalPrize: number;
-  mode: "manual" | "derived";
+  mode: "manual";
 };
+
+export type CupConfigDerived = {
+  key: string;
+  name: string;
+  mode: "derived";
+  format: "groups_then_knockout";
+  groupCount: number;
+  advancePerGroup: number;
+  startGw: number;
+  useGwPoints: boolean;
+  groupPoints: { win: number; draw: number; loss: number };
+  includeThirdPlacePlayoff: boolean;
+  randomSeed: string;
+  totalPrize?: number;
+  cupPayouts?: { champion?: number; runnerUp?: number; third?: number };
+};
+
+export type CupConfig = CupConfigManual | CupConfigDerived;
 
 export type MindlessConfig = {
   season: string;
@@ -143,8 +161,88 @@ export type PrizeLedgerItem =
 
 export type PrizesFile = { items: PrizeLedgerItem[]; totalsByEntryId: Record<number, number> };
 
-export type CupResults = {
+export type CupManualResults = {
   [cupKey: string]: { winners: Array<{ entryId: number; amount: number; note?: string }> };
+};
+
+export type CupGroupKey = "A" | "B";
+
+export type CupDrawMatch = {
+  matchId: string;
+  homeEntryId: number | null;
+  awayEntryId: number | null;
+  group?: CupGroupKey;
+};
+
+export type CupDrawRound = {
+  round: number;
+  stage: "group" | "semi" | "final" | "third";
+  gw: number;
+  matches: CupDrawMatch[];
+};
+
+export type CupDraw = {
+  cupKey: string;
+  season: string;
+  generatedAt: string;
+  randomSeed: string;
+  startGw: number;
+  groups: {
+    A: number[];
+    B: number[];
+  };
+  fixtures: CupDrawRound[];
+};
+
+export type CupMatchResult = {
+  matchId: string;
+  stage: "group" | "semi" | "final" | "third";
+  round: number;
+  gw: number;
+  homeEntryId: number | null;
+  awayEntryId: number | null;
+  homePoints: number | null;
+  awayPoints: number | null;
+  winnerEntryId: number | null;
+  decidedBy: "gw_points" | "season_points" | "random" | null;
+};
+
+export type CupGroupTableRow = {
+  entryId: number;
+  played: number;
+  won: number;
+  drawn: number;
+  lost: number;
+  gf: number;
+  ga: number;
+  gd: number;
+  points: number;
+};
+
+export type CupResults = {
+  cupKey: string;
+  updatedAt: string;
+  rounds: Array<{
+    round: number;
+    stage: "group" | "semi" | "final" | "third";
+    gw: number;
+    matches: CupMatchResult[];
+  }>;
+  groupTables: {
+    A: CupGroupTableRow[];
+    B: CupGroupTableRow[];
+  };
+  finals: {
+    semi1?: { matchId: string; winnerEntryId: number | null };
+    semi2?: { matchId: string; winnerEntryId: number | null };
+    final?: { matchId: string; winnerEntryId: number | null };
+    third?: { matchId: string; winnerEntryId: number | null };
+  };
+  placements: {
+    championEntryId?: number;
+    runnerUpEntryId?: number;
+    thirdEntryId?: number;
+  };
 };
 
 export type BootstrapEvent = {

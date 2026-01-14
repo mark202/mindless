@@ -1,0 +1,178 @@
+{
+  "cupKey": "MindlessCup",
+  "season": "2025-2026",
+  "generatedAt": "2026-01-14T04:20:59.350Z",
+  "randomSeed": "MindlessCup-2025-2026-GW22",
+  "startGw": 22,
+  "groups": {
+    "A": [
+      5905295,
+      5623640,
+      7316166,
+      6578949,
+      2761555
+    ],
+    "B": [
+      4223228,
+      6879756,
+      5742237,
+      5114501,
+      6108677
+    ]
+  },
+  "fixtures": [
+    {
+      "round": 1,
+      "stage": "group",
+      "gw": 22,
+      "matches": [
+        {
+          "matchId": "GR1-A-1",
+          "homeEntryId": 5905295,
+          "awayEntryId": 5623640,
+          "group": "A"
+        },
+        {
+          "matchId": "GR1-A-2",
+          "homeEntryId": 7316166,
+          "awayEntryId": 6578949,
+          "group": "A"
+        },
+        {
+          "matchId": "GR1-B-1",
+          "homeEntryId": 4223228,
+          "awayEntryId": 6879756,
+          "group": "B"
+        },
+        {
+          "matchId": "GR1-B-2",
+          "homeEntryId": 5742237,
+          "awayEntryId": 5114501,
+          "group": "B"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "stage": "group",
+      "gw": 23,
+      "matches": [
+        {
+          "matchId": "GR2-A-1",
+          "homeEntryId": 5905295,
+          "awayEntryId": 7316166,
+          "group": "A"
+        },
+        {
+          "matchId": "GR2-A-2",
+          "homeEntryId": 5623640,
+          "awayEntryId": 2761555,
+          "group": "A"
+        },
+        {
+          "matchId": "GR2-B-1",
+          "homeEntryId": 4223228,
+          "awayEntryId": 5742237,
+          "group": "B"
+        },
+        {
+          "matchId": "GR2-B-2",
+          "homeEntryId": 6879756,
+          "awayEntryId": 6108677,
+          "group": "B"
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "stage": "group",
+      "gw": 24,
+      "matches": [
+        {
+          "matchId": "GR3-A-1",
+          "homeEntryId": 5905295,
+          "awayEntryId": 6578949,
+          "group": "A"
+        },
+        {
+          "matchId": "GR3-A-2",
+          "homeEntryId": 2761555,
+          "awayEntryId": 7316166,
+          "group": "A"
+        },
+        {
+          "matchId": "GR3-B-1",
+          "homeEntryId": 4223228,
+          "awayEntryId": 5114501,
+          "group": "B"
+        },
+        {
+          "matchId": "GR3-B-2",
+          "homeEntryId": 6108677,
+          "awayEntryId": 5742237,
+          "group": "B"
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "stage": "group",
+      "gw": 25,
+      "matches": [
+        {
+          "matchId": "GR4-A-1",
+          "homeEntryId": 5905295,
+          "awayEntryId": 2761555,
+          "group": "A"
+        },
+        {
+          "matchId": "GR4-A-2",
+          "homeEntryId": 5623640,
+          "awayEntryId": 6578949,
+          "group": "A"
+        },
+        {
+          "matchId": "GR4-B-1",
+          "homeEntryId": 4223228,
+          "awayEntryId": 6108677,
+          "group": "B"
+        },
+        {
+          "matchId": "GR4-B-2",
+          "homeEntryId": 6879756,
+          "awayEntryId": 5114501,
+          "group": "B"
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "stage": "semi",
+      "gw": 26,
+      "matches": [
+        {
+          "matchId": "SF1",
+          "homeEntryId": null,
+          "awayEntryId": null
+        },
+        {
+          "matchId": "SF2",
+          "homeEntryId": null,
+          "awayEntryId": null
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "stage": "final",
+      "gw": 27,
+      "matches": [
+        {
+          "matchId": "F1",
+          "homeEntryId": null,
+          "awayEntryId": null
+        }
+      ]
+    }
+  ]
+}

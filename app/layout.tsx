@@ -30,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 { href: '/fixtures', label: 'Fixtures' },
                 { href: '/stats', label: 'Stats' },
                 { href: '/months', label: 'Months' },
+                { href: '/cup', label: 'Cup' },
                 { href: '/prizes', label: 'Prizes' },
                 { href: '/rules', label: 'Rules' }
               ].map((link) => (

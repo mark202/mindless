@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { LeaderboardTable } from '../components/LeaderboardTable';
+import { SyncNowButton } from '../components/SyncNowButton';
 import { mindlessConfig } from '../lib/appConfig';
 import { formatCurrency, formatDateTime, formatNumber } from '../lib/format';
 import { getLastUpdated, loadBootstrap, loadPrizes, loadSeason, loadWeeklies } from '../lib/data';
@@ -46,6 +47,7 @@ export default async function HomePage() {
             <Link href="/months" className="rounded-lg border border-white/10 px-3 py-2 text-sm text-white">
               Monthly ladders
             </Link>
+            <SyncNowButton />
           </div>
         </div>
         <div className="mt-5 grid gap-4 md:grid-cols-4">

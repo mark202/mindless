@@ -30,6 +30,17 @@ Core config lives in `config/mindless.config.json` (season, leagueId, timezone, 
 
 `.github/workflows/ingest.yml` runs `npm run ingest` on a schedule or manually, commits updated `public/data/**`, and pushes them so static hosting (Netlify/GitHub Pages) redeploys.
 
+## Sync now button
+
+The homepage includes a "Sync now" button that dispatches the GitHub Actions ingest workflow. Configure these environment variables on Netlify (or any hosting that runs the Next.js API route):
+
+- `GITHUB_WORKFLOW_TOKEN` (PAT with `repo` + `workflow` permissions)
+- `GITHUB_REPO_OWNER` (GitHub org/user)
+- `GITHUB_REPO_NAME` (repository name)
+- `GITHUB_WORKFLOW_FILE` (optional, default `ingest.yml`)
+- `GITHUB_REF` (optional, default `main`)
+- `SYNC_TRIGGER_TOKEN` (optional but recommended; when set the button prompts for it)
+
 ## Notes
 
 - Tie handling supports deterministic ordering (entryId asc) or prize splitting via `tieMode` in config.

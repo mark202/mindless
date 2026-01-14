@@ -36,6 +36,15 @@ function findEvent(events: Bootstrap['events'], gw: number) {
   return events.find((event) => event.id === gw);
 }
 
+type CupStage = 'group' | 'semi' | 'final' | 'third';
+
+function assertCupStage(value: string): CupStage {
+  if (value === 'group' || value === 'semi' || value === 'final' || value === 'third') {
+    return value;
+  }
+  throw new Error(`Invalid cup stage: ${value}`);
+}
+
 function hashStringToSeed(value: string): number {
   let hash = 0;
   for (let i = 0; i < value.length; i += 1) {
@@ -568,12 +577,13 @@ async function main() {
     const groupStageComplete = groupGws.every((gw) => finishedSet.has(gw));
 
     const rounds: CupResults['rounds'] = groupRounds.map((round) => {
+      const stage = assertCupStage(round.stage);
       const isFinished = finishedSet.has(round.gw);
       const matches = round.matches.map((match) =>
         isFinished
           ? resolveMatchResult(
               match.matchId,
-              'group',
+              stage,
               round.round,
               round.gw,
               match.homeEntryId,
@@ -583,7 +593,7 @@ async function main() {
             )
           : {
               matchId: match.matchId,
-              stage: 'group',
+              stage,
               round: round.round,
               gw: round.gw,
               homeEntryId: match.homeEntryId,
@@ -594,7 +604,7 @@ async function main() {
               decidedBy: null
             }
       );
-      return { round: round.round, stage: 'group', gw: round.gw, matches };
+      return { round: round.round, stage, gw: round.gw, matches };
     });
 
     const groupMatches = rounds.flatMap((round) => round.matches);

@@ -44,7 +44,7 @@ export default async function HomePage() {
             <Link href="/gameweeks" className="btn">
               Weekly details
             </Link>
-            <Link href="/months" className="rounded-lg border border-white/10 px-3 py-2 text-sm text-white">
+            <Link href="/months" className="btn">
               Monthly ladders
             </Link>
             <SyncNowButton />

@@ -45,6 +45,28 @@ function assertCupStage(value: string): CupStage {
   throw new Error(`Invalid cup stage: ${value}`);
 }
 
+function buildPendingMatch(
+  matchId: string,
+  stage: CupStage,
+  round: number,
+  gw: number,
+  homeEntryId: number | null,
+  awayEntryId: number | null
+): CupMatchResult {
+  return {
+    matchId,
+    stage,
+    round,
+    gw,
+    homeEntryId,
+    awayEntryId,
+    homePoints: null,
+    awayPoints: null,
+    winnerEntryId: null,
+    decidedBy: null
+  };
+}
+
 function hashStringToSeed(value: string): number {
   let hash = 0;
   for (let i = 0; i < value.length; i += 1) {
@@ -591,18 +613,7 @@ async function main() {
               gameweekPoints,
               cup.randomSeed
             )
-          : {
-              matchId: match.matchId,
-              stage,
-              round: round.round,
-              gw: round.gw,
-              homeEntryId: match.homeEntryId,
-              awayEntryId: match.awayEntryId,
-              homePoints: null,
-              awayPoints: null,
-              winnerEntryId: null,
-              decidedBy: null
-            }
+          : buildPendingMatch(match.matchId, stage, round.round, round.gw, match.homeEntryId, match.awayEntryId)
       );
       return { round: round.round, stage, gw: round.gw, matches };
     });
@@ -639,18 +650,7 @@ async function main() {
                   gameweekPoints,
                   cup.randomSeed
                 )
-              : {
-                  matchId: match.matchId,
-                  stage: 'semi',
-                  round: semiFixture.round,
-                  gw: semiFixture.gw,
-                  homeEntryId,
-                  awayEntryId,
-                  homePoints: null,
-                  awayPoints: null,
-                  winnerEntryId: null,
-                  decidedBy: null
-                };
+              : buildPendingMatch(match.matchId, 'semi', semiFixture.round, semiFixture.gw, homeEntryId, awayEntryId);
           })
         }
       : null;
@@ -685,18 +685,7 @@ async function main() {
                   gameweekPoints,
                   cup.randomSeed
                 )
-              : {
-                  matchId: match.matchId,
-                  stage: 'final',
-                  round: finalFixture.round,
-                  gw: finalFixture.gw,
-                  homeEntryId,
-                  awayEntryId,
-                  homePoints: null,
-                  awayPoints: null,
-                  winnerEntryId: null,
-                  decidedBy: null
-                };
+              : buildPendingMatch(match.matchId, 'final', finalFixture.round, finalFixture.gw, homeEntryId, awayEntryId);
           })
         }
       : null;
@@ -725,18 +714,7 @@ async function main() {
                   gameweekPoints,
                   cup.randomSeed
                 )
-              : {
-                  matchId: match.matchId,
-                  stage: 'third',
-                  round: thirdFixture.round,
-                  gw: thirdFixture.gw,
-                  homeEntryId,
-                  awayEntryId,
-                  homePoints: null,
-                  awayPoints: null,
-                  winnerEntryId: null,
-                  decidedBy: null
-                };
+              : buildPendingMatch(match.matchId, 'third', thirdFixture.round, thirdFixture.gw, homeEntryId, awayEntryId);
           })
         }
       : null;

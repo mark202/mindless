@@ -1809,42 +1809,42 @@
     "gw": 22,
     "ranked": [
       {
-        "entryId": 2761555,
-        "playerName": "Dickster Bishop",
-        "teamName": "Miso  Consadole",
-        "points": 0,
-        "rank": 1,
-        "prize": 8
-      },
-      {
-        "entryId": 4223228,
-        "playerName": "Paul Cowley",
-        "teamName": "Lukakugate",
-        "points": 0,
-        "rank": 2,
-        "prize": 6
-      },
-      {
-        "entryId": 5114501,
-        "playerName": "Jamie Marshall",
-        "teamName": "Fortune and Glory",
-        "points": 0,
-        "rank": 3,
-        "prize": 5
-      },
-      {
         "entryId": 5623640,
         "playerName": "Andrew Cowling",
         "teamName": "Cowlers FC",
-        "points": 0,
-        "rank": 4,
-        "prize": 4
+        "points": 30,
+        "rank": 1,
+        "prize": 8
       },
       {
         "entryId": 5742237,
         "playerName": "Lee Hopson",
         "teamName": "Check your Emails",
-        "points": 0,
+        "points": 26,
+        "rank": 2,
+        "prize": 6
+      },
+      {
+        "entryId": 2761555,
+        "playerName": "Dickster Bishop",
+        "teamName": "Miso  Consadole",
+        "points": 24,
+        "rank": 3,
+        "prize": 5
+      },
+      {
+        "entryId": 7316166,
+        "playerName": "Ricky Hopson",
+        "teamName": "New Jersey United",
+        "points": 20,
+        "rank": 4,
+        "prize": 4
+      },
+      {
+        "entryId": 5114501,
+        "playerName": "Jamie Marshall",
+        "teamName": "Fortune and Glory",
+        "points": 19,
         "rank": 5,
         "prize": 2.5
       },
@@ -1852,7 +1852,7 @@
         "entryId": 5905295,
         "playerName": "Mark Hogben",
         "teamName": "The 202",
-        "points": 0,
+        "points": 18,
         "rank": 6,
         "prize": 1.5
       },
@@ -1860,7 +1860,7 @@
         "entryId": 6108677,
         "playerName": "Jason Base",
         "teamName": "Isakly What We Need",
-        "points": 0,
+        "points": 18,
         "rank": 7,
         "prize": 1
       },
@@ -1868,23 +1868,23 @@
         "entryId": 6578949,
         "playerName": "Marc Hopson",
         "teamName": "Peter Siddle’s Lunch",
-        "points": 0,
+        "points": 18,
         "rank": 8,
+        "prize": 0
+      },
+      {
+        "entryId": 4223228,
+        "playerName": "Paul Cowley",
+        "teamName": "Lukakugate",
+        "points": 13,
+        "rank": 9,
         "prize": 0
       },
       {
         "entryId": 6879756,
         "playerName": "Chris Hajjar",
         "teamName": "Leeds United States",
-        "points": 0,
-        "rank": 9,
-        "prize": 0
-      },
-      {
-        "entryId": 7316166,
-        "playerName": "Ricky Hopson",
-        "teamName": "New Jersey United",
-        "points": 0,
+        "points": 12,
         "rank": 10,
         "prize": 0
       }

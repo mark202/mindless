@@ -1411,25 +1411,25 @@
     },
     {
       "type": "season",
-      "entryId": 4223228,
+      "entryId": 5114501,
       "amount": 30,
       "reason": "Season rank 6"
     },
     {
       "type": "season",
-      "entryId": 5114501,
+      "entryId": 4223228,
       "amount": 24,
       "reason": "Season rank 7"
     },
     {
       "type": "season",
-      "entryId": 6879756,
+      "entryId": 5742237,
       "amount": 18,
       "reason": "Season rank 8"
     },
     {
       "type": "season",
-      "entryId": 5742237,
+      "entryId": 6879756,
       "amount": 12,
       "reason": "Season rank 9"
     },
@@ -1450,14 +1450,14 @@
   "totalsByEntryId": {
     "0": 53,
     "2761555": 251,
-    "4223228": 187.5,
-    "5114501": 144,
+    "4223228": 181.5,
+    "5114501": 150,
     "5623640": 170,
-    "5742237": 80.5,
+    "5742237": 86.5,
     "5905295": 60.5,
     "6108677": 240,
     "6578949": 126.5,
-    "6879756": 70,
+    "6879756": 64,
     "7316166": 158
   }
 }
